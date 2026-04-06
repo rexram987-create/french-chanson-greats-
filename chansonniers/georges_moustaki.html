@@ -1,0 +1,175 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ז'ורז' מוסטקי - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/georges_moustaki.jpg" alt="ז'ורז' מוסטקי" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/400x400?text=Georges+Moustaki'">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">ז'ורז' מוסטקי</h1>
+            <p class="text-2xl text-gray-400 font-mono">Georges Moustaki</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1934 - 2013
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם מקורי: ג'וזפה מוסטאקי (Giuseppe Mustacchi)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">נולד למשפחה יהודית-יוונית דוברת איטלקית במצרים.<br>
+                    <strong>Giuseppe:</strong> הגרסה האיטלקית לשם העברי <strong>יוסף</strong>, שפירושו "יוסיף ה' לי בן אחר", מסמל ברכה והמשכיות.<br>
+                    <strong>Mustacchi:</strong> שם משפחה ממוצא יווני-קורפיאוטי. האטימולוגיה קשורה ככל הנראה למילה האיטלקית/יוונית לשפם (Mustache), אולי כינוי לאב קדמון בעל שפם בולט.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם הבמה (המחווה): ז'ורז' (Georges)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">עם הגעתו לפריז ב-1951, מוסטאקי הצעיר הושפע עמוקות משיריו של <strong>ז'ורז' ברסנס</strong>. לאחר שפגש את ברסנס והפך לחברו הקרוב, הוא החליט לשנות את שמו הפרטי מג'וזפה ל<strong>ז'ורז'</strong> כאות של הוקרה והערצה למורה הדרך האמנותי שלו.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות באלכסנדריה - פסיפס של תרבויות
+            </h2>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">הבית הקוסמופוליטי:</strong> מוסטקי נולד באלכסנדריה, מצרים, בתקופה שבה העיר הייתה צומת דרכים תרבותי נדיר. בבית דיברו איטלקית, ברחוב דיברו ערבית, ובבית הספר למד בצרפתית. הוריו, נסים ושרה, היו סוחרי ספרים שהפעילו את חנות "Cité du Livre", מה שהעניק לו גישה לספרות ושירה עולמית מגיל צעיר מאוד.
+                </p>
+                <p>
+                    <strong class="text-blue-300">הזהות המורכבת:</strong> הוא גדל כיהודי יווני בטריטוריה מצרית תחת השפעה בריטית וצרפתית. המורכבות הזו יצרה אצלו זהות של "אזרח העולם" (Cosmopolite) ומנעה ממנו להרגיש שייך למקום אחד בלבד. זיכרונותיו מהים התיכון, מהריחות של השוק באלכסנדריה ומהשמש המצרית ליוו את כל יצירתו המאוחרת.
+                </p>
+                <p>
+                    <strong class="text-blue-300">הבריחה מהגורל הבורגני:</strong> למרות שהיה אמור להמשיך את עסקי הספרים של אביו, מוסטקי נמשך לגיטרה ולחיי החופש. בשנת 1951, כשהוא רק בן 17, עזב את מצרים לפריז. בתחילה עבד כעיתונאי וכמוכר ספרים מדלת לדלת, אך מהר מאוד נשאב לעולם הקברטים של הגדה השמאלית.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>ה"מטק" (Le Métèque):</strong> האידאולוגיה האמנותית של מוסטקי התמקדה ביופי שבלהיות "זר". שירו המפורסם ביותר, "Le Métèque" (כינוי גנאי למהגרים), הפך תחת ידו להמנון גאווה של אנשי השוליים והנוודים התרבותיים. הוא הציג את דמותו של הזר עם הזקן הפרוע והמראה הים-תיכוני כדמות רומנטית ומושכת.</p>
+                <p><strong>הכותב של הגדולים:</strong> לפני שהפך לזמר מבצע מצליח, מוסטקי היה כותב שירים (Songwriter) מהמבוקשים בצרפת. הישגו הגדול ביותר היה כתיבת המילים לשיר "Milord" עבור אדית פיאף (שאיתה גם ניהל רומן קצר וסוער). הוא כתב גם עבור איב מונטאן, דלידה, וברברה.</p>
+                <p><strong>החופש והבדידות:</strong> שיריו עסקו תמיד בערכי החופש האישי והבדידות המזהרת. הוא שילב מוזיקה ברזילאית (בוסה נובה), מקצבים יווניים ושאנסון צרפתי, ויצר סגנון רך, לחיש ואינטלקטואלי שהיה ייחודי לו.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Georges+Moustaki+-+Le+Meteque" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Le Métèque
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">הזר (שיר הדגל שלו)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Georges+Moustaki+-+Ma+liberte" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Ma liberté
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">חירותי (מוכר בעברית בביצועה של חוה אלברשטיין)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Georges+Moustaki+-+Ma+solitude" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Ma solitude
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">בדידותי</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Georges+Moustaki+-+Joseph" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Joseph
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">יוסף (שיר מחווה לשמו המקורי)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Georges+Moustaki+-+Il+est+trop+tard" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Il est trop tard
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">מאוחר מדי</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- סעיף מקורות מחקר -->
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">Questions à la une (2000)</span> - ספר זיכרונותיו של מוסטקי המפרט את ילדותו באלכסנדריה.</li>
+                <li>ארכיוני ה-INA הצרפתי - ראיונות על עבודתו המשותפת עם אדית פיאף וז'ורז' ברסנס.</li>
+                <li><span class="font-mono text-gray-300">Georges Moustaki, la ballade du Métèque</span> - ביוגרפיה מאת לואי-ז'אן קלווה (Louis-Jean Calvet).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/georges_moustaki.jpg" alt="ז'ורז' מוסטקי" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800" onerror="this.src='https://via.placeholder.com/800x800?text=Georges+Moustaki'">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Georges Moustaki</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
+
+```
