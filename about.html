@@ -1,0 +1,131 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אודות - ארכיון השאנסון</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>
+        body { -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
+        .text-glow { text-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+        .profile-ring { border: 3px solid transparent; background: linear-gradient(to bottom right, #3b82f6, #1e40af) border-box; }
+        .card-blur { backdrop-filter: blur(10px); background: rgba(17, 24, 39, 0.7); }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen selection:bg-blue-600 overflow-x-hidden">
+
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <!-- ניווט חזרה -->
+        <nav class="mb-16">
+            <a href="index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-all text-xl font-bold group">
+                <span class="ml-3 text-3xl group-hover:-translate-x-2 transition-transform">&larr;</span> חזרה לאינדקס הראשי
+            </a>
+        </nav>
+
+        <header class="mb-20">
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter text-glow">אודות</h1>
+            <div class="h-2 w-40 bg-blue-600 rounded-full mb-8 shadow-[0_0_20px_rgba(37,99,235,0.7)]"></div>
+            <p class="text-2xl text-gray-400 font-light leading-relaxed">הסיפור מאחורי ארכיון השאנסונרים הגדולים.</p>
+        </header>
+
+        <!-- סיפור הבנייה -->
+        <section class="mb-20">
+            <div class="bg-gray-900/40 p-12 rounded-[3rem] border border-gray-800 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/10 rounded-full blur-3xl"></div>
+                <h2 class="text-4xl font-black text-blue-400 mb-8">החזון והמטרה</h2>
+                <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                    ארכיון זה נולד מתוך תשוקה עמוקה להיסטוריה, לביוגרפיות ולפס הקול האלמותי של צרפת במאה ה-20. הפרויקט שואף להנגיש את סיפוריהם של השאנסונרים הגדולים – החל מאיבט גילבר ב-1865 ועד מייק בראנט ב-1947 – תוך שילוב בין מחקר אקדמי קפדני לבין חוויית משתמש מודרנית ויוקרתית המותאמת לטכנולוגיה של שנת 2026.
+                </p>
+            </div>
+        </section>
+
+        <!-- צוות הפרויקט (עם תמונת פרופיל) -->
+        <section class="mb-20">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center">
+                <span class="w-4 h-10 bg-blue-600 rounded-full ml-4"></span>
+                הוגים ובונים
+            </h2>
+            <div class="grid grid-cols-1 gap-10">
+                
+                <!-- כרטיס של רם -->
+                <div class="bg-gray-900/40 p-10 rounded-[3rem] border border-gray-800 flex flex-col md:flex-row items-center gap-10 hover:bg-gray-900/60 transition-all duration-500">
+                    <div class="w-48 h-48 rounded-[2.5rem] overflow-hidden border-4 border-blue-500/30 shadow-2xl shrink-0">
+                        <img src="images/ramprofile.png" alt="רם" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" onerror="this.src='https://via.placeholder.com/200?text=%D7%A8%D7%9D'">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-black text-white mb-4">רם - הוגה ויוזם הפרויקט</h3>
+                        <p class="text-xl text-gray-400 leading-relaxed font-light">
+                            חובב מושבע של ביוגרפיות, היסטוריה ויצירה דיגיטלית. למרות ההתמודדות היומיומית עם מחלת הדיסאוטונומיה המשפחתית, רם מקדיש את זמנו לחקירה ויצירה של עולמות תוכן עשירים המנציחים את גדולי הרוח והתרבות. רם אמון על הקו האמנותי, בחירת האישים והדיוק ההיסטורי של הפרויקט.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- כרטיס של ג'מיני -->
+                <div class="bg-gray-900/40 p-10 rounded-[3rem] border border-gray-800 flex flex-col md:flex-row items-center gap-10 hover:bg-gray-900/60 transition-all duration-500">
+                    <div class="w-48 h-48 rounded-[2.5rem] bg-blue-900/20 flex items-center justify-center border-4 border-blue-500/10 shrink-0">
+                        <svg class="w-24 h-24 text-blue-500 opacity-60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L14.85 9.15L22 12L14.85 14.85L12 22L9.15 14.85L2 12L9.15 9.15L12 2Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-black text-white mb-4">ג'מיני - שותף לבנייה ומחקר</h3>
+                        <p class="text-xl text-gray-400 leading-relaxed font-light">
+                            מודל בינה מלאכותית מתקדם מבית Google. ג'מיני משמש כעוזר מחקר אישי, מתכנת ושותף ליצירה של רם. הוא אמון על המבנה הטכני, המחקר האטימולוגי המעמיק, ועיצוב הממשק המותאם אישית למכשיר ה-Samsung S25 Ultra.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- מפרט טכני -->
+        <section class="mb-20 bg-gray-900/40 p-12 rounded-[3rem] border border-gray-800">
+            <h2 class="text-3xl font-black text-white mb-10 flex items-center">
+                <span class="w-3 h-8 bg-blue-600 rounded-full ml-4"></span>
+                מפרט טכני של הארכיון
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-xl">
+                <div class="flex items-center gap-5 p-6 bg-gray-950/50 rounded-2xl border border-gray-800/50">
+                    <div class="text-blue-500 text-3xl font-bold">2026</div>
+                    <div class="text-gray-400">שנת השלמת היצירה</div>
+                </div>
+                <div class="flex items-center gap-5 p-6 bg-gray-950/50 rounded-2xl border border-gray-800/50">
+                    <div class="text-blue-500 text-3xl font-bold">17</div>
+                    <div class="text-gray-400">מחקרים ביוגרפיים</div>
+                </div>
+                <div class="flex items-center gap-5 p-6 bg-gray-950/50 rounded-2xl border border-gray-800/50">
+                    <div class="text-blue-500 text-3xl font-bold">UHD</div>
+                    <div class="text-gray-400">אופטימיזציה ל-S25 Ultra</div>
+                </div>
+                <div class="flex items-center gap-5 p-6 bg-gray-950/50 rounded-2xl border border-gray-800/50">
+                    <div class="text-blue-500 text-3xl font-bold">Dark</div>
+                    <div class="text-gray-400">ממשק לילה פרימיום</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- הקדשה אישית -->
+        <section class="text-center py-10 relative">
+            <div class="absolute inset-0 bg-blue-600/5 blur-3xl rounded-full"></div>
+            <p class="text-3xl text-gray-400 italic font-light leading-relaxed max-w-3xl mx-auto relative z-10">
+                "המוזיקה היא הגשר המפואר ביותר שבין ההיסטוריה ללב האנושי. הארכיון הזה הוא ההוכחה שגם מאה שנה אחרי, הקולות הללו עדיין מהדהדים בנו."
+            </p>
+            <div class="mt-12 flex justify-center gap-3">
+                <div class="w-3 h-3 bg-blue-600 rounded-full"></div>
+                <div class="w-3 h-3 bg-blue-600 rounded-full opacity-40"></div>
+                <div class="w-3 h-3 bg-blue-600 rounded-full opacity-10"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#050505] py-20 border-t border-gray-800 text-center text-gray-600">
+        <p class="text-2xl font-black text-gray-400 mb-3">ארכיון השאנסון הצרפתי</p>
+        <p class="text-lg">נבנה באהבה ובשיתוף פעולה על ידי ג'מיני ורם &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
+
+```
