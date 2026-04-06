@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>איבט גילבר - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/yvette_guilbert.jpg" alt="איבט גילבר" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">איבט גילבר</h1>
+            <p class="text-2xl text-gray-400 font-mono">Yvette Guilbert</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1865 - 1944
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שמות פרטיים מקוריים: אמה, לור, אסתר</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">נולדה בשם המלא <span class="text-white font-mono">Emma Laure Esther</span>.<br>
+                    <strong>Emma:</strong> ממקור גרמאני עתיק, פירושו "שלם" או "אוניברסלי".<br>
+                    <strong>Laure:</strong> מהלטינית <span class="text-white font-mono">Laurus</span> (עץ הדפנה), סמל היסטורי לניצחון וכבוד.<br>
+                    <strong>Esther:</strong> ממקור פרסי שמשמעותו "כוכב", או על שם אסתר המלכה המקראית.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם הבמה: איבט (Yvette)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם פרטי צרפתי פופולרי ממקור גרמאני. נגזר מהשורש <span class="text-white font-mono">Ivo</span> שמשמעותו היא "עץ הטקסוס" (Yew wood), עץ גמיש וחזק שממנו נהגו בעת העתיקה להכין קשתות לקרב. לכן השם נושא גם הקשרים של הגנה וגמישות.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: גילבר (Guilbert)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה צרפתי ממוצא גרמאני-פרנקי עתיק. הוא מורכב מהמילים <span class="text-white font-mono">Wille</span> (רצון, תשוקה) ו-<span class="text-white font-mono">berht</span> (בהיר, מפורסם או זוהר). הפירוש המילולי המשותף הוא "בעל רצון עז וזוהר" או "מפורסם בזכות כוח רצונו".</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                איבט גילבר נולדה בפריז, בתו של סוחר גרוטאות (חנויות יד שנייה) ואם כובענית. ילדותה לוותה בקשיים כלכליים ניכרים, ובעקבות המצב בבית, בילתה חלק ניכר משנותיה הראשונות בחבל נורמנדי. כשחזרה לפריז, המציאות טפחה על פניה והיא נאלצה לעזוב את לימודיה בגיל 16 כדי לעזור בפרנסה. היא עבדה תחילה כתופרת, לאחר מכן כמוכרת בחנות כלבו, ואף שימשה כדוגמנית עבור ציירים בפריז. האווירה המחוספסת והקשה של חיי הפועלים ברחובות העיר חשפה אותה לסלנג, לדיבור הישיר ולסיפורי החיים שאותם תשחזר לימים בכישרון כה רב על במות הקברט. היא החלה לקחת שיעורי משחק ודיקציה במימון עצמי כדי לנסות לברוח מגורלה ולפרוץ לעולם הבמה.
+            </p>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>הישגים ויזואליים ומוזה:</strong> גילבר הפכה לאייקון הוויזואלי המוכר והמובהק ביותר של תור הזהב הפריזאי, ה"בל אפוק" (Belle Époque). היא הייתה המוזה המרכזית של הצייר הדגול אנרי דה טולוז-לוטרק, שהנציח אותה בכרזותיו המפורסמות במועדון המולן רוז'. הסמלים המסחריים שלה היו כפפות שחורות ארוכות במיוחד (עד מעבר למרפקים), פנים חיוורות במכוון וצוואר ארוך ודק.</p>
+                <p><strong>אידאולוגיה אמנותית (הזמרת-הדוברת):</strong> איבט הייתה החלוצה המובהקת של סגנון ה-<span class="text-white font-mono">Chanson diseuse</span> (שיר המוגש בדיבור). האידאולוגיה שלה לא התמקדה בקול זמיר יפהפה, אלא בהגשה תיאטרונית, אקספרסיבית מאוד ולעיתים אף גרוטסקית. היא השתמשה בגופה, פניה, עיניה וידיה הארוכות כדי "לשחק" את מילות השיר, ולא רק לשיר אותן.</p>
+                <p><strong>קולן של שולי החברה:</strong> בניגוד לזמרות ששרו על רומנטיקה מתקתקה ומנותקת, גילבר התמקדה בהארת חייהם של אנשי השוליים: פועלי כפיים, עניים, פרוצות ונשים מנוצלות. היא הביאה את שפת הרחוב הבוטה והסלנג הפריזאי אל הבמות המכובדות ביותר, מתוך ביקורת חברתית נוקבת והזדהות עמוקה עם מעמד הפועלים.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Le Fiacre</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">הכרכרה</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Madame Arthur</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">מאדאם ארתור</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Houlette</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">מקל הרועים (שיר צרפתי מסורתי עתיק שאותו חידשה ושימרה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">L'Hôtel du numéro 3</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">מלון מספר שלוש</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/yvette_guilbert.jpg" alt="איבט גילבר" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Yvette Guilbert</p>
+        </div>
+    </div>
+
+    <!-- סקריפט להפעלת המודאל -->
+    <script>
+        const modal = document.getElementById('imageModal');
+        
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('flex');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+            document.body.style.overflow = '';
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
