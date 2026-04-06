@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ז'ילבר בקו - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/gilbert_becaud.jpg" alt="ז'ילבר בקו" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">ז'ילבר בקו</h1>
+            <p class="text-2xl text-gray-400 font-mono">Gilbert Bécaud</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1927 - 2001
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי מקורי: פרנסואה (François)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">משמעותו בצרפתית עתיקה היא "האדם הצרפתי" או "האיש החופשי".</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם אמצעי (שם הבמה): ז'ילבר (Gilbert)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם גרמאני עתיק המורכב מהמילים <span class="text-white font-mono">Gisil</span> (עירבון, שבועה או בן-ערובה אציל) ו-<span class="text-white font-mono">Berht</span> (זוהר או מפורסם). משמעותו היא "שבועה זוהרת". זהו השם שבו בחר להשתמש כשם הבמה הפרטי שלו.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם המשפחה המקורי והשם המאומץ: סילי / בקו</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                        שמו המלא בלידתו היה <strong>François Gilbert Silly</strong>. שם המשפחה "סילי" יצר בעיה עצומה בתחילת דרכו כאשר ניסה לפרוץ בשוק הבינלאומי (היות ובאנגלית "Silly" פירושו "טיפש").<br>
+                        כדי לפתור זאת, בשנת 1952 אימץ באופן חוקי את שם המשפחה של בן זוגה של אמו, לואי בקו (<strong>Bécaud</strong>). מבחינה אטימולוגית, השם "בקו" נגזר ממילים צרפתיות עתיקות המציינות אדם קשקשן, או מהמילה "Bec" (מקור של ציפור).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות, פסנתר ומחתרת
+            </h2>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">העילוי מהדרום:</strong> נולד בטולון (Toulon) שעל חוף הים התיכון בדרום צרפת. כבר מגיל צעיר מאוד הפגין כישרון יוצא דופן ונדיר. אמו, שזיהתה את כישרונו, דחפה אותו למצוינות, ובגיל 9 בלבד הוא התקבל ללימודי פסנתר קלאסי בקונסרבטוריון היוקרתי של העיר ניס.
+                </p>
+                <p>
+                    <strong class="text-blue-300">מלחמת העולם השנייה והרזיסטנס:</strong> פרוץ מלחמת העולם השנייה קטע את חלומותיו האקדמיים. בשנת 1942, כשהוא עדיין נער, משפחתו עברה להסתתר באזור ההררי של סבואה (Savoie) כדי לחמוק מהכיבוש. שם, למרות גילו הצעיר, הצטרף ז'ילבר לארגון ההתנגדות הצרפתית למחתרת (הרזיסטנס) ופעל נגד הנאצים, פרט הירואי ופחות מוכר מעברו.
+                </p>
+                <p>
+                    <strong class="text-blue-300">המעבר לפריז והמפגש עם פיאף:</strong> לאחר המלחמה (בגיל 20), נסע לפריז כדי להתפרנס מנגינה. הוא החל לעבוד כפסנתרן מלווה במועדוני הלילה של העיר. באותה תקופה פגש באדית פיאף, שהתרשמה מנגינתו. היא לא רק הפכה למדריכה שלו, אלא הכריחה אותו להתחיל לשיר את השירים שהוא מלחין בעצמו, ובכך דחפה אותו אל קדמת הבמה ואל עולם השאנסון.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>מר 100,000 וולט (Monsieur 100 000 Volts):</strong> זה היה הכינוי המפורסם של בקו, שניתן לו בשל האנרגיה המטורפת והלהט שבהם הופיע. בניגוד לזמרים הסטטיים של התקופה, הוא היה פורט על הפסנתר בעוצמה אדירה, מתרוצץ על הבמה, מזיע וסוחף את הקהל לאקסטזה. באחת מהופעותיו הראשונות באולם "אולימפיה", הקהל (שהיה מורכב ברובו מצעירים) שבר מרוב התלהבות את המושבים באולם, אירוע שעשה כותרות ברחבי צרפת.</p>
+                <p><strong>אידאולוגיה אמנותית (חיבור בין סגנונות):</strong> האידאולוגיה של בקו הייתה לגשר בין הדרמה והטקסטואליות של השאנסון הצרפתי המסורתי לבין הקצב התוסס של מוזיקת הפופ, הג'אז והרוקנרול האמריקאי. הוא יצר את דמותו האייקונית כשתמיד הופיע עם חליפה כחולה ועניבת פפיון כחולה עם נקודות לבנות (Cravate à pois).</p>
+                <p><strong>יצירות מופת בינלאומיות:</strong> בקו היה מלחין גאון שיצר את שיריו בעצמו. הוא זכה להצלחה בינלאומית מסחררת שלא נפלה מזו של אזנבור. שירו "Et maintenant" תורגם לאנגלית ל-"What Now My Love" ובוצע על ידי פרנק סינטרה, אלביס פרסלי, סוני ושר ורבים אחרים, והפך לאחת מהקלאסיקות המוכרות ביותר של המאה ה-20.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Gilbert+Becaud+-+Et+maintenant" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Et maintenant
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">ועכשיו (תורגם ל-What Now My Love המפורסם)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Gilbert+Becaud+-+Nathalie" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Nathalie
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">נטלי (שיר אהבה נוסטלגי למדריכת תיירים במוסקבה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Gilbert+Becaud+-+L%27important+c%27est+la+rose" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        L'important c'est la rose
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">החשוב הוא הוורד (מוכר בביצוע עברי תחת אותו שם)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Gilbert+Becaud+-+Je+t%27appartiens" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Je t'appartiens
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">אני שייך לך (הוקלט באנגלית כ-Let It Be Me וזכה להצלחה עצומה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Gilbert+Becaud+-+Je+reviens+te+chercher" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Je reviens te chercher
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">אני חוזר לקחת אותך</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- סעיף מקורות מחקר -->
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">Bécaud, l'homme à la cravate à pois</span> - ביוגרפיה רשמית המתעדת את חייו והמצאת זהותו הבימתית.</li>
+                <li>ארכיוני מכון ה-INA הצרפתי - המתעדים את סערת המעריצים ושבירת המושבים באולם ה"אולימפיה" ב-1955.</li>
+                <li>רישומי איגוד היוצרים (Sacem) - המוכיחים את זכויותיו על לחניו ואת ההיקף העצום של גרסאות הכיסוי הבינלאומיות שנעשו לשיריו (כמו פרנק סינטרה).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/gilbert_becaud.jpg" alt="ז'ילבר בקו" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Gilbert Bécaud</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
