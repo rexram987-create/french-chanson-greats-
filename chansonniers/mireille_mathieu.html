@@ -1,0 +1,172 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>מיריל מתייה - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/mireille_mathieu.jpg" alt="מיריל מתייה" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/400x400?text=Mireille+Mathieu'">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">מיריל מתייה</h1>
+            <p class="text-2xl text-gray-400 font-mono">Mireille Mathieu</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1946 - היום
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי: מיריל (Mireille)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקורו בשפה האוקסיטנית-פרובנסאלית (דרום צרפת), מהשם <span class="text-white font-mono">Mirandola</span>. המשמעות היא "להעריץ" או "ראויה להערצה". השם הפך לפופולרי מאוד בצרפת בעקבות הפואמה המפורסמת "Mireio" של המשורר פרדריק מיסטרל.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: מתייה (Mathieu)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה צרפתי נפוץ שמקורו בשם המקראי העברי <strong>מתתיהו</strong> (Matityahu), שפירושו "מתנת האל". השם הגיע לצרפת דרך הלטינית כ-<span class="text-white font-mono">Matthaeus</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות בתוך עוני ואמונה גדולה
+            </h2>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">צריף עץ ו-14 אחים:</strong> מיריל נולדה בעיר אביניון (Avignon) למשפחה קשת יום במיוחד. היא הייתה הבכורה מבין 14 ילדים. אביה, רוז'ה, היה סתת אבן במצבות, ואמה, מרסל, טיפלה בילדים. בילדותה המוקדמת חיה המשפחה בצריף עץ רעוע ללא חימום, שדרכו חדרו רוחות החורף הקרות, עד שבגיל 15 עברו לדיור ציבורי צנוע.
+                </p>
+                <p>
+                    <strong class="text-blue-300">הבריחה למפעל והדיסלקציה:</strong> מיריל סבלה מדיסלקציה בבית הספר ונאלצה לכתוב ביד שמאל (דבר שהיה אסור אז וגרם לה להשפלות מצד המורים). בגיל 14 עזבה את הלימודים כדי לעבוד במפעל לייצור מעטפות, שם עבדה בפרך כדי לעזור בפרנסת אחיה. למרות העבודה הפיזית, היא מעולם לא הפסיקה לשיר בזמן העבודה, וזכתה לכינוי "הזמיר מהמפעל".
+                </p>
+                <p>
+                    <strong class="text-blue-300">הפריצה והצל של פיאף:</strong> אביה, שהיה זמר חובב בעל קול בריטון, עודד אותה להשתתף בתחרויות שירה מקומיות. בשנת 1965 הופיעה בטלוויזיה הצרפתית והדהימה את האומה; קולה ועוצמתה היו כה דומים לאדית פיאף המנוחה, שהקהל הכריז עליה מיד כ"יורשת".
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>ה"דרור מאביניון" (La Demoiselle d'Avignon):</strong> האידאולוגיה האמנותית של מתייה היא שימור השאנסון הצרפתי הטהור והקלאסי. היא סירבה לאורך כל הקריירה שלה להיסחף לזרמים מודרניים מדי, ושמרה על דמותה השמרנית והאלגנטית, כולל תספורת ה"קארה" האייקונית שלה שנשארה כמעט ללא שינוי מעל 50 שנה.</p>
+                <p><strong>שגרירת התרבות הצרפתית בעולם:</strong> מיריל היא אחת האמניות הצרפתיות המצליחות ביותר בכל הזמנים. היא הקליטה מעל 1,200 שירים ב-11 שפות שונות, ומכרה למעלה מ-150 מיליון עותקים. היא הפכה לסמל לאומי עד כדי כך שפניה שימשו כמודל לפסל ה"מריאן" (סמל הרפובליקה הצרפתית) בשנת 1978.</p>
+                <p><strong>הישגים בינלאומיים:</strong> היא הייתה האמנית המערבית הראשונה שהופיעה בסין הקומוניסטית, והיא נחשבת לדיווה נערצת במיוחד ברוסיה ובגרמניה. לאורך חייה זכתה באינספור עיטורים, כולל אות "לגיון הכבוד" הצרפתי.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Mireille+Mathieu+-+Mon+credo" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Mon credo
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">האני מאמין שלי (הלהיט שפרסם אותה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Mireille+Mathieu+-+La+Dernière+Valse" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        La Dernière Valse
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">הוואלס האחרון (ביצוע צרפתי ללהיט של אנגלברט המפרדינק)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Mireille+Mathieu+-+Santa+Maria+de+la+Mer" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Santa Maria de la Mer
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">מריה הקדושה של הים</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Mireille+Mathieu+-+Mille+colombes" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Mille colombes
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">אלף יונים (שיר תקווה לשלום עולמי)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Mireille+Mathieu+-+Une+femme+amoureuse" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Une femme amoureuse
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">אישה מאוהבת (הגרסה הצרפתית ללהיט של ברברה סטרייסנד)</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">Oui je crois (1987)</span> - האוטוביוגרפיה של מיריל מתייה, המספרת בפירוט על ילדותה באביניון.</li>
+                <li>ארכיוני ה-INA הצרפתי - תיעוד הופעותיה הטלוויזיוניות הראשונות ב-1965.</li>
+                <li><span class="font-mono text-gray-300">Mireille Mathieu: La Demoiselle d'Avignon</span> - מחקר ביוגרפי מאת עמנואל בון (Emmanuel Bon).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/mireille_mathieu.jpg" alt="מיריל מתייה" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800" onerror="this.src='https://via.placeholder.com/800x800?text=Mireille+Mathieu'">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Mireille Mathieu</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
+
+```
