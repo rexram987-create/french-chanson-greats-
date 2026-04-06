@@ -1,0 +1,192 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ג'ו דאסן - מחקר מקיף</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-tap-highlight-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/joe_dassin.jpg" alt="ג'ו דאסן" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/400x400?text=Joe+Dassin'">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md text-lg">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3 tracking-tight">ג'ו דאסן</h1>
+            <p class="text-2xl text-gray-400 font-mono">Joe Dassin</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1938 - 1980
+            </div>
+        </header>
+
+        <!-- אטימולוגיה מפורטת ומפוצלת -->
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי ראשון: ג'וזף (Joseph)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור מקראי עברי (<strong>יוסף</strong>). המשמעות היא "יוסיף ה' לי בן אחר". שם זה ניתן לו כמחווה לשורשיו היהודיים העמוקים של אביו, הבמאי ז'ול דאסן.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי אמצעי: איירה (Ira)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור עברי (<strong>עירא</strong>). פירושו המילולי הוא "ערני", "שומר" או "נמרץ". זהו שם תנ"כי (עירא היאירי היה מגיבורי דוד המלך).</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: דאסן (Dassin)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">סיפורו של שם המשפחה הוא אחד המרתקים בתולדות ההגירה לארה"ב. סבו של ג'ו, סמואל, הגיע מאודסה (אוקראינה) לניו יורק. כשפקיד ההגירה שאל לשמו, סמואל לא הבין את השאלה וענה ביידיש/אנגלית משובשת: <strong>"D'Odessa"</strong> (מאודסה). הפקיד רשם בטעות את הצליל כ-<strong>Dassin</strong>, וכך הפכה העיר אודסה לשם המשפחה הרשמי של השושלת.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- פרטי ילדות -->
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות בברוקלין, הוליווד והגלות הכפויה
+            </h2>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">הבית האמנותי בניו יורק:</strong> ג'ו נולד בניו יורק למשפחה שחיה ונושמת אמנות. אביו, ז'ול דאסן, היה במאי תיאטרון וקולנוע מבטיח, ואמו, ביאטריס לאונר, הייתה כנרת וירטואוזית. הבית היה ספוג בדיונים אינטלקטואליים ומוזיקה קלאסית.
+                </p>
+                <p>
+                    <strong class="text-blue-300">הטראומה של הרשימה השחורה:</strong> בשנת 1950, כשהיה בן 12, חייו השתנו מקצה לקצה. אביו ז'ול הוכנס ל"רשימה השחורה" של המקארתיזם (ציד המכשפות נגד קומוניסטים). המשפחה נאלצה לברוח מארה"ב בן לילה כדי להימנע ממאסר ומחורבן כלכלי. הם נדדו באירופה (פריז, שווייץ, איטליה), וג'ו הצעיר נאלץ להחליף 11 בתי ספר שונים בתוך שנים ספורות, מה שהפך אותו לאדם רב-תרבותי השולט בשפות רבות.
+                </p>
+                <p>
+                    <strong class="text-blue-300">האנתרופולוג המוזיקלי:</strong> למרות שחזר לארה"ב כדי להשלים דוקטורט באנתרופולוגיה באוניברסיטת מישיגן, הגורל החזיר אותו לצרפת. הוא עבד בעבודות פיזיות קשות כמו נהג משאית וטבח כדי לממן את לימודיו, עובדה שנטעה בו מוסר עבודה גבוה וצניעות שליוותה אותו לאורך כל הקריירה הזוהרת שלו.
+                </p>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה והישגים -->
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>אידאולוגיית המקצוענות (Professionalism):</strong> ג'ו דאסן מעולם לא ראה בעצמו "אמן מיוסר". הוא תפס את עצמו כבעל מלאכה (Artisan). הוא האמין שהקהל משלם כסף כדי לקבל את הבידור המושלם ביותר, ולכן היה ידוע כפרפקציוניסט אובססיבי; הוא נהג להקליט כל שיר עשרות פעמים, תוך שהוא מקפיד על כל הברה וצליל, עד שהתוצאה הייתה מלוטשת ללא רבב.</p>
+                <p><strong>הישג: שיא המכירות האירופאי:</strong> דאסן הוא אחד האמנים הצרפתים המצליחים ביותר בהיסטוריה. הוא מכר למעלה מ-50 מיליון אלבומים. הוא הצליח לגשר על הפער בין ה"שאנסון" האינטלקטואלי לבין ה"פופ" הקליל, ויצר סגנון ייחודי שנקרא "Le Slow" – בלדות איטיות ומרגשות שכבשו את כל היבשת.</p>
+                <p><strong>הישג: סמל האלגנטיות הצרפתית:</strong> למרות שהיה אמריקאי במוצאו, הוא הפך לסמל של התרבות הצרפתית המודרנית. חליפתו הלבנה האייקונית והחיוך הכובש שלו הפכו אותו ל"נסיך" של שנות ה-70. מותו הפתאומי מהתקף לב ב-1980 בטהיטי הפך אותו לאגדה נצחית בגיל 41 בלבד.</p>
+            </div>
+        </section>
+
+        <!-- השירים הגדולים -->
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-all">
+                    <a href="https://www.youtube.com/results?search_query=Joe+Dassin+-+L%27Ete+Indien" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        L'Été indien
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0">קיץ אינדיאני (הלהיט הגדול ביותר שלו)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-all">
+                    <a href="https://www.youtube.com/results?search_query=Joe+Dassin+-+Les+Champs+Elysees" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Les Champs-Élysées
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0">שאנז אליזה (המנון פריזאי קליל)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-all">
+                    <a href="https://www.youtube.com/results?search_query=Joe+Dassin+-+Et+si+tu+n%27existais+pas" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Et si tu n'existais pas
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0">לו לא היית קיימת (בלדה רומנטית מופתית)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-all">
+                    <a href="https://www.youtube.com/results?search_query=Joe+Dassin+-+A+toi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        À toi
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0">לך (שיר אהבה והקדשה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-all">
+                    <a href="https://www.youtube.com/results?search_query=Joe+Dassin+-+Salut+les+amoureux" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Salut les amoureux
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0">שלום לכם אוהבים</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- סעיף מקורות מחקר -->
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">Joe Dassin: Inconnu et fascinant</span> - ביוגרפיה מקיפה מאת מארי-פראנס ברייר.</li>
+                <li>ארכיוני ה-FBI - תיעוד החקירות והגירוש של משפחת דאסן מארה"ב ב-1950.</li>
+                <li>ארכיון אוניברסיטת מישיגן - רישומי לימודיו של דאסן באנתרופולוגיה.</li>
+                <li><span class="font-mono text-gray-300">Dassin par Joe</span> - תיעוד ראיונות רדיו וטלוויזיה.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4 leading-relaxed">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/joe_dassin.jpg" alt="ג'ו דאסן" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800" onerror="this.src='https://via.placeholder.com/800x800?text=Joe+Dassin'">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Joe Dassin</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { 
+                modal.classList.remove('opacity-0'); 
+                modal.classList.add('flex'); 
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { 
+                modal.classList.add('hidden'); 
+                modal.classList.remove('flex'); 
+            }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
+
+```
