@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>שארל טרנה - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/charles_trenet.jpg" alt="שארל טרנה" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">שארל טרנה</h1>
+            <p class="text-2xl text-gray-400 font-mono">Charles Trenet</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1913 - 2001
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי (בשימוש): שארל (Charles)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקורו בשם הגרמאני העתיק <span class="text-white font-mono">Karl</span>, שמשמעותו היא "אדם חופשי" או "גבר". השם היה נפוץ מאוד בקרב מלכי צרפת, הקיסרות הרומית הקדושה ואצולת אירופה לאורך ההיסטוריה.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שמות נוספים: לואי, אוגוסט, קלוד</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שמו המלא והרשמי בעת היוולדו היה: <span class="text-white font-mono">Louis Charles Auguste Claude Trenet</span>.<br>
+                    <strong>Louis:</strong> ממקור גרמאני-פרנקי עתיק (<span class="text-white font-mono">Chlodovech</span>), פירושו "לוחם מפורסם".<br>
+                    <strong>Auguste:</strong> מהשפה הלטינית, פירושו "נשגב" או "מרומם".<br>
+                    <strong>Claude:</strong> נגזר מהשם הרומאי היוקרתי <span class="text-white font-mono">Claudius</span> (אשר שורשו המקורי קשור אומנם למילה "צולע", אך אומץ כשם של שושלת קיסרים).</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: טרנה (Trenet)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה אופייני מאוד לאזור אוקסיטניה (דרום צרפת). המקור האטימולוגי אינו ודאי לחלוטין, אך חוקרי שמות משפחה צרפתיים נוטים לקשר אותו למילים אוקסיטניות עתיקות הקשורות לחיתוך (כלי חקלאי) או למאפיין גיאוגרפי של אדמה מקומית.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                טרנה נולד בעיר נרבון (Narbonne) השוכנת בדרום צרפת, לחופי הים התיכון. ילדותו עמדה בצל משבר משפחתי עמוק: גירושי הוריו כשהיה בן 7 בלבד – אירוע שנחשב לטאבו חברתי כבד ושערורייתי באותם ימים. אמו, שאותה העריץ, עזבה עם גבר אחר, וטרנה הצעיר נשלח לפנימייה נוקשה שם סבל מבדידות ומשמעת נוקשה. הנחמה הגדולה שלו הייתה האמנות. הוא נמשך לציור, לשירה ולמוזיקה, ובמיוחד נשבה בקסמם של מקצבי הג'אז האמריקאי החדשים שהחלו להגיע לאירופה דרך התקליטים של התקופה. בגיל צעיר החל לכתוב שירים ובשנות ה-30 עבר לפריז, עיר האורות, במטרה לעסוק באמנות ולברוח מהאווירה השמרנית והלוחצת של עיירת הולדתו בדרום.
+            </p>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>הישגים ויצירה מקורית (הסינגר-סונגרייטר):</strong> טרנה נחשב לאחד מהאבות המייסדים החשובים ביותר של השאנסון הצרפתי המודרני, בעיקר משום שהיה "סינגר-סונגרייטר" (Singer-songwriter) מובהק – הוא כתב הן את המילים והן את הלחנים לכל שיריו, דבר שהיה נדיר מאוד בתחילת המאה ה-20 (אז תפקידי המבצע, המלחין והתמלילן היו בדרך כלל מופרדים לאנשים שונים).</p>
+                <p><strong>אידאולוגיה מוזיקלית (מהפכת הסווינג):</strong> האידאולוגיה שלו הייתה לחולל מהפכה בשאנסון הצרפתי המסורתי, שהיה לרוב איטי, מלנכולי ודרמטי מאוד. הוא עשה זאת על ידי הזרקה של מקצבי הסווינג והג'אז האמריקאי המהירים והקופצניים. הוא זכה לכינוי <span class="text-white font-mono">Le Fou chantant</span> ("המשוגע המזמר") בשל האנרגיה המתפרצת שלו על הבמה, עיניו הפעורות והשמחה הסוריאליסטית והילדותית שהקרין לקהל.</p>
+                <p><strong>מורשת תרבותית על-זמנית:</strong> שירו "La Mer" (הים) נחשב עד היום לאחד מהשירים הצרפתיים המוקלטים, המושמעים והמתורגמים ביותר בעולם (עם יותר מ-400 ביצועים בשפות שונות, ביניהן הגרסה המפורסמת "Beyond the Sea" באנגלית). הוא חיבר באופן גאוני בין שירה צרפתית גבוהה ומדויקת לבין מוזיקה פופולרית, קלילה ועליזה.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Mer</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">הים (קלאסיקה עולמית)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Douce France</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">צרפת המתוקה (שיר שהפך להמנון נוסטלגי צרפתי)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Boum!</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">בום! (משחזר צליל של לב פועם מאהבה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Que reste-t-il de nos amours ?</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">מה נותר מאהבותינו? (שיר נוסטלגי ומלנכולי מהמפורסמים שלו)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Y'a d'la joie</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">יש שמחה (באוויר)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/charles_trenet.jpg" alt="שארל טרנה" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Charles Trenet</p>
+        </div>
+    </div>
+
+    <!-- סקריפט להפעלת המודאל -->
+    <script>
+        const modal = document.getElementById('imageModal');
+        
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('flex');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+            document.body.style.overflow = '';
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
