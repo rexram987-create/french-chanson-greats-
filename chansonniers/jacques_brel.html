@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ז'אק ברל - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/jacques_brel.jpg" alt="ז'אק ברל" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">ז'אק ברל</h1>
+            <p class="text-2xl text-gray-400 font-mono">Jacques Brel</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1929 - 1978
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי: ז'אק (Jacques)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">נולד בשם המלא ז'אק רומן ז'ורז' ברל.<br>
+                    <strong>Jacques:</strong> הגרסה הצרפתית לשם העברי "יעקב" (Latiin: Jacobus). המשמעות היא "זה שעוקב" או "תופס בעקב". מטאפורית, זהו שם שמייצג אדם שסולל את דרכו בעקשנות.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שמות אמצעיים: רומן (Romain), ז'ורז' (Georges)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                    <strong>Romain:</strong> מהמילה הלטינית <span class="text-white font-mono">Romanus</span>, שמשמעותה "אזרח רומא", סמל של מסורת ויציבות בורגנית קתולית.<br>
+                    <strong>Georges:</strong> מקור יווני עתיק (<span class="text-white font-mono">Georgios</span>) שמשמעותו "עובד אדמה" או "איכר".</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: ברל (Brel)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה ממוצא פלמי-בלגי (Flemish). יש הסבורים כי מקורו במילה העתיקה "Brell" שמשמעותה קשורה לתהליך טוויית צמר, או שזהו כינוי שניתן לאדם פטפטן וצעקני באזור פלנדריה. בניגוד לזמרים רבים אחרים, ברל מעולם לא שינה את שמו ושמר עליו בגאווה כסמל לזהותו הבלגית.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות בבלגיה, שעמום בורגני והבריחה
+            </h2>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">חיים בורגניים בבריסל:</strong> ז'אק ברל לא נולד למצוקה או לרחוב הפריזאי. הוא נולד בשארבק (Schaerbeek), פרוור של בריסל, בלגיה, למשפחה קתולית, בורגנית, ואמידה מאוד. אביו רומן היה שותף במפעל מצליח לייצור קרטונים. ילדותו של ז'אק הייתה נוחה פיננסית, אך הוא סבל משעמום עמוק, מחנק וחוסר השראה בסביבה השמרנית.
+                </p>
+                <p>
+                    <strong class="text-blue-300">המרד במפעל הקרטון:</strong> כתלמיד, הוא היה חולמני ולא מוצלח. בגיל 18, אביו שיבץ אותו לעבודה במפעל הקרטון המשפחתי "Vanneste & Brel". ז'אק שנא כל רגע ממה שהוא הגדיר כ"חיים אפורים וחסרי תוחלת". הנחמה היחידה שלו הייתה פעילות בתנועת נוער קתולית (שם הקים להקת תיאטרון) והתחלת כתיבת שירים על גיטרה.
+                </p>
+                <p>
+                    <strong class="text-blue-300">העזיבה הקשה לפריז:</strong> למרות שהיה נשוי ל"מיש" (Miche) ואב לבנות, התסכול של ברל מהחיים הבורגניים גבר. בשנת 1953, בגיל 24, הוא קיבל החלטה קורעת לב: הוא נטש את משרתו במפעל, השאיר את משפחתו בבלגיה (אף ששמר איתן על קשר ותמך בהן בהמשך), ועבר לפריז לבדו כדי לנסות את מזלו כזמר קברטים. תחילת דרכו בפריז הייתה רצופה בכישלונות, עוני, ולעג על ה"מבטא הבלגי" שלו, אך התעקשותו השתלמה.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>התמסרות פיזית וזיעה (ההופעה הטוטאלית):</strong> האידאולוגיה הבימתית של ברל הייתה פנומנלית: הוא לא רק "שר" את השירים, הוא "חי" ו"דימם" אותם על הבמה. הופעותיו היו מלוות בהבעות פנים דרמטיות, מחוות גוף אקספרסיביות, ובעיקר בהמון זיעה שנטפה ממנו – מה שהפך לסמלו המסחרי. הקהל הרגיש שהוא נותן את כל כולו, עד טיפת האנרגיה האחרונה, בכל הופעה מחדש.</p>
+                <p><strong>משורר החולשות האנושיות:</strong> ברל תיעב צביעות, ובמיוחד את "הבורגנות" שממנה ברח (כפי שבא לידי ביטוי בשיר הבוטה "Les Bourgeois"). הטקסטים שלו, שנחשבים לפסגת השירה הצרפתית המודרנית, עסקו בנושאים כואבים: פחד מהזדקנות, מוות, אהבות נכזבות נואשות, זנות, חולשה גברית ובדידות.</p>
+                <p><strong>הפרישה בשיא:</strong> אחד ההישגים, או הצעדים האידאולוגיים הקיצוניים ביותר שלו, אירע ב-1967. בשיא תהילתו העולמית, כשכל העולם לרגליו, ברל פשוט הודיע שהוא מפסיק להופיע. הוא הרגיש שהוא מתחיל "לזייף" ולחזור על עצמו. הוא למד לטוס, קנה יאכטה ("Askoy II"), הפליג למרקיז (איי פולינזיה הצרפתית שבאוקיינוס השקט), וחי שם חיים הרפתקניים כטייס עבור התושבים המקומיים עד מותו המוקדם מסרטן ריאות.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Jacques+Brel+-+Ne+me+quitte+pas" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Ne me quitte pas
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">אל תעזבי אותי (שיר האהבה הנואש הגדול בכל הזמנים)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Jacques+Brel+-+Amsterdam" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Amsterdam
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">אמסטרדם (שיר עוצמתי על מלחיה של העיר)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Jacques+Brel+-+Quand+on+n%27a+que+l%27amour" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Quand on n'a que l'amour
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">כשיש רק אהבה (ההמנון הפציפיסטי שפרסם אותו לראשונה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Jacques+Brel+-+La+Chanson+des+vieux+amants" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        La Chanson des vieux amants
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">שיר האוהבים הזקנים (מוכר בעברית בביצועו של יוסי בנאי)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Jacques+Brel+-+Le+Plat+Pays" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Le Plat Pays
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">הארץ השטוחה (שיר אהבה-שנאה למולדתו, בלגיה)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- סעיף מקורות מחקר -->
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">Jacques Brel, une vie (1984)</span> - הביוגרפיה המקיפה והמוסמכת ביותר מאת אוליבייה טוד (Olivier Todd), המתארת את הבריחה מבלגיה ואת שנותיו באיי המרקיז.</li>
+                <li>ארכיון מוסד ז'אק ברל (Fondation Jacques Brel) בבריסל - לתיעוד חייו ומופעי הענק שלו ב"אולימפיה".</li>
+                <li><span class="font-mono text-gray-300">Brel</span> - ספר זיכרונות ותיעוד ראיונות, המפרט את השקפת עולמו נגד הצביעות הבורגנית.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/jacques_brel.jpg" alt="ז'אק ברל" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Jacques Brel</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
