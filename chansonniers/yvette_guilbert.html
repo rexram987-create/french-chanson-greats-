@@ -55,11 +55,19 @@
         <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
             <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
                 <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
-                ילדות
+                שורשים, ילדות ודרך חתחתים לבמה
             </h2>
-            <p class="text-xl leading-relaxed text-gray-300">
-                איבט גילבר נולדה בפריז, בתו של סוחר גרוטאות (חנויות יד שנייה) ואם כובענית. ילדותה לוותה בקשיים כלכליים ניכרים, ובעקבות המצב בבית, בילתה חלק ניכר משנותיה הראשונות בחבל נורמנדי. כשחזרה לפריז, המציאות טפחה על פניה והיא נאלצה לעזוב את לימודיה בגיל 16 כדי לעזור בפרנסה. היא עבדה תחילה כתופרת, לאחר מכן כמוכרת בחנות כלבו, ואף שימשה כדוגמנית עבור ציירים בפריז. האווירה המחוספסת והקשה של חיי הפועלים ברחובות העיר חשפה אותה לסלנג, לדיבור הישיר ולסיפורי החיים שאותם תשחזר לימים בכישרון כה רב על במות הקברט. היא החלה לקחת שיעורי משחק ודיקציה במימון עצמי כדי לנסות לברוח מגורלה ולפרוץ לעולם הבמה.
-            </p>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">עוני בפריז ונורמנדי:</strong> איבט גילבר נולדה ברובע המארה בפריז, בתו של אִיפּוֹלִיט (סוחר גרוטאות ובגדי יד שנייה) ואלבינא (כובענית). ילדותה לוותה בקשיים כלכליים ניכרים, ובעקבות קריסתו העסקית של אביה ועזיבתו, נשלחה בילדותה המוקדמת לחיות אצל קרובי משפחה בחבל נורמנדי, שם חוותה חיים כפריים ופשוטים. 
+                </p>
+                <p>
+                    <strong class="text-blue-300">שוליית תופרת ברחובות העיר:</strong> כשחזרה לפריז, המציאות טפחה על פניה. בגיל 16 נאלצה לעזוב לחלוטין את לימודיה כדי לפרנס את אמה. היא עבדה כשוליית תופרת, כמוכרת בחנות הכלבו היוקרתית 'פרנטן' (Printemps), ואף שימשה כדוגמנית עבור ציירים בפריז. האווירה המחוספסת והקשה של חיי הפועלים חשפה אותה לסלנג, לדיבור הישיר ולמצוקת הנשים בשולי החברה.
+                </p>
+                <p>
+                    <strong class="text-blue-300">כישלונות ראשונים והתעקשות:</strong> חלומה היה להיות שחקנית קומדי פראנסז, והיא שילמה על שיעורי משחק ודיקציה ממשכורתה הזעומה. אולם, הופעותיה הראשונות כשחקנית וכזמרת במועדון האֶלְדוֹרָדוֹ הסתיימו בכישלון צורב. הקהל, שהיה רגיל לזמרות קברט שופעות בלבוש נוצץ וקול פעמונים, לעג למראה הרזה והגבוה שלה ולקולה "המדבר". במקום להיכנע, איבט הפכה את חולשותיה לנשק: היא הגזימה את חיוורון פניה, לבשה כפפות שחורות ויצרה דמות גרוטסקית ומרתקת שכבשה את העיר.
+                </p>
+            </div>
         </section>
 
         <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
@@ -98,6 +106,18 @@
                 </div>
             </div>
         </section>
+
+        <!-- סעיף מקורות מחקר -->
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">La Chanson de ma vie (1927)</span> - האוטוביוגרפיה הרשמית שכתבה איבט גילבר בעצמה.</li>
+                <li><span class="font-mono text-gray-300">Yvette Guilbert: La Muse de Montmartre</span> - מחקרים ביוגרפיים על קשריה עם ציירי המונמארטר.</li>
+                <li>ארכיוני המוזיאון לאמנות מודרנית (MoMA) - תיעוד יצירותיו של טולוז-לוטרק המציגות את גילבר.</li>
+            </ul>
+        </section>
     </main>
 
     <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
@@ -119,32 +139,20 @@
         </div>
     </div>
 
-    <!-- סקריפט להפעלת המודאל -->
     <script>
         const modal = document.getElementById('imageModal');
-        
         function openModal() {
             modal.classList.remove('hidden');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modal.classList.add('flex');
-            }, 10);
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
             document.body.style.overflow = 'hidden';
         }
-
         function closeModal() {
             modal.classList.add('opacity-0');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }, 300);
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
             document.body.style.overflow = '';
         }
-        
         document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
-                closeModal();
-            }
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
         });
     </script>
 </body>
