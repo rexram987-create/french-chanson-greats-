@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>אדית פיאף - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <!-- התמונה הופכת ללחיצה (cursor-pointer) עם קריאה לפונקציה פתיחת המודאל -->
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/edith_piaf.jpg" alt="אדית פיאף" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">אדית פיאף</h1>
+            <p class="text-2xl text-gray-400 font-mono">Édith Piaf</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1915 - 1963
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי: אדית (Édith)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור אנגלי עתיק (<span class="text-white font-mono">Eadgyth</span>). מורכב מהמילים "ead" שמשמעותה עושר/מבורך, ו-"gyth" שמשמעותה מלחמה או מאבק. היא נקראה כך על שם אדית קאוול, אחות בריטית שהוצאה להורג על ידי הגרמנים במלחמת העולם הראשונה, כחודשיים לפני לידתה של פיאף, והפכה לסמל של גבורה והקרבה.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם אמצעי: ג'ובאנה (Giovanna)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור איטלקי, הצורה הנקבית ל"יוחנן" (John). המשמעות היא "אלוהים הוא חנון" או "מתנת האל". השם ניתן לה בהשפעת מוצאה האיטלקי-מרוקאי של אמה (אניטה מאייר).</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה מקורי: גסיון (Gassion)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה צרפתי ממקור גאלו-רומי. ייתכן שנגזר משם פרטי קדום (<span class="text-white font-mono">Gassius</span>) או מתיאור לאדם שהגיע מאזור מסוים (גסקוניה) בדרום-מערב צרפת. אביה, לואי אלפונס גסיון, היה אקרובט קרקס ונער גומי.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם במה: פיאף (Piaf)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מילה מסלנג פריזאי (Argot) שפירושה "דרור" או "ציפור קטנה". השם הוענק לה על ידי לואי לפלה (Louis Leplée), בעל מועדון לילה שגילה אותה שרה ברחוב. הוא העניק לה את הכינוי "La Môme Piaf" (הילדונת דרור) בשל קומתה הזעירה (1.42 מטר), שבריריותה והאנרגיה העצבנית והעוצמתית שלה כשהופיעה.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                סיפור ילדותה של פיאף קשה וטראגי. היא נולדה (לפי האגדה, על מדרכת רחוב בלוויל בפריז) אל תוך עוני מרוד. אמה, זמרת רחוב, נטשה אותה זמן קצר לאחר לידתה. אדית הועברה להשגחת סבתה (מצד האם) שהזניחה אותה, ולאחר מכן הועברה על ידי אביה לסבתו (מצד האב) שניהלה בית בושת בנורמנדי, שם גודלה על ידי הפרוצות. בגיל 3 עד 7 סבלה מעיוורון חלקי עקב דלקת קרנית (שאותו ייחסה לנס החלמה בזכות הקדושה תרז מליזייה). בנעוריה חזרה לפריז, הצטרפה לאביה במופעי אקרובטיקה ברחוב, שם החלה לשיר לראשונה כדי לאסוף את הנדבות מהקהל, והבינה שקולה הוא כלי ההישרדות שלה.
+            </p>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>קולה של צרפת:</strong> פיאף הפכה לסמל התרבותי הבולט ביותר של צרפת במאה ה-20 ולסמל ההתנגדות והתקווה במהלך הכיבוש הנאצי במלחמת העולם השנייה. קולה הרועד והעוצמתי היה מזוהה לחלוטין עם הנשמה הפריזאית.</p>
+                <p><strong>אידאולוגיה אמנותית (כנות טוטאלית):</strong> האמנות שלה דרשה התערטלות רגשית מוחלטת. היא שרה תמיד בשמלה שחורה פשוטה, כדי ששום דבר לא יסיח את הדעת מהקול ומההבעה. היא שרה את חייה שלה: על אהבות טרגיות, אובדן (כמו מות אהוב ליבה, המתאגרף מרסל סרדן, בתאונת מטוס), בדידות והרחוב.</p>
+                <p><strong>הישגים בינלאומיים וטיפוח דור ההמשך:</strong> למרות חסרונותיה הפיזיים (מראה שברירי, בעיות בריאות קשות והתמכרויות), היא כבשה במות בעולם כולו, כולל הצלחה נדירה לאמן צרפתי בקרנגי הול בניו יורק. במקביל, היא שימשה כמנטורית וכקרש קפיצה לאמנים צעירים רבים שהפכו לענקים בזכותה, כגון איב מונטאן, שארל אזנבור, וז'ורז' מוסטקי.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Vie en rose</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">החיים בוורוד</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Non, je ne regrette rien</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">לא, איני מתחרטת על דבר</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Hymne à l'amour</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">המנון לאהבה (נכתב לזכרו של מרסל סרדן)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Milord</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">מילורד</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Foule</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">ההמון (ההמון הסוחף)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/edith_piaf.jpg" alt="אדית פיאף" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Édith Piaf</p>
+        </div>
+    </div>
+
+    <!-- סקריפט להפעלת המודאל -->
+    <script>
+        const modal = document.getElementById('imageModal');
+        
+        function openModal() {
+            modal.classList.remove('hidden');
+            // השהייה קטנה כדי לאפשר לאנימציית ה-opacity לעבוד
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('flex');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // מניעת גלילה של הרקע
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+            document.body.style.overflow = ''; // החזרת הגלילה
+        }
+        
+        // סגירה גם באמצעות כפתור ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
