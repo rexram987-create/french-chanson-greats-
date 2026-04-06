@@ -15,7 +15,6 @@
         </a>
         
         <header class="mb-14 text-center">
-            <!-- התמונה הופכת ללחיצה (cursor-pointer) עם קריאה לפונקציה פתיחת המודאל -->
             <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
                 <img src="../images/edith_piaf.jpg" alt="אדית פיאף" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                 <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
@@ -57,11 +56,22 @@
         <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
             <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
                 <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
-                ילדות
+                מיתוס ומציאות: ילדותה של "ילדת האשפתות"
             </h2>
-            <p class="text-xl leading-relaxed text-gray-300">
-                סיפור ילדותה של פיאף קשה וטראגי. היא נולדה (לפי האגדה, על מדרכת רחוב בלוויל בפריז) אל תוך עוני מרוד. אמה, זמרת רחוב, נטשה אותה זמן קצר לאחר לידתה. אדית הועברה להשגחת סבתה (מצד האם) שהזניחה אותה, ולאחר מכן הועברה על ידי אביה לסבתו (מצד האב) שניהלה בית בושת בנורמנדי, שם גודלה על ידי הפרוצות. בגיל 3 עד 7 סבלה מעיוורון חלקי עקב דלקת קרנית (שאותו ייחסה לנס החלמה בזכות הקדושה תרז מליזייה). בנעוריה חזרה לפריז, הצטרפה לאביה במופעי אקרובטיקה ברחוב, שם החלה לשיר לראשונה כדי לאסוף את הנדבות מהקהל, והבינה שקולה הוא כלי ההישרדות שלה.
-            </p>
+            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
+                <p>
+                    <strong class="text-blue-300">מיתוס הלידה ברחוב:</strong> האגדה המפורסמת ביותר מספרת שפיאף נולדה תחת פנס רחוב, על גלימתו של שוטר שעבר במקרה ברובע בלוויל (Belleville). במציאות, תעודת הלידה הרשמית שלה מוכיחה שהיא נולדה בצורה מסודרת בבית החולים "טנון" (Hôpital Tenon) ב-19 בדצמבר 1915. עם זאת, המיתוס שירת היטב את בניית הדמות הטראגית שלה וטופח על ידה ועל ידי מנהליה.
+                </p>
+                <p>
+                    <strong class="text-blue-300">הגידול בבית בושת:</strong> אמה (זמרת רחוב) נטשה אותה זמן קצר לאחר לידתה. אביה, שהתגייס למלחמת העולם הראשונה, העביר אותה להשגחת סבתו שניהלה בית בושת בעיירה ברנה בנורמנדי. פיאף אכן גודלה במשך מספר שנים על ידי הפרוצות של המקום, שהעניקו לה את החום, הדאגה והאהבה שהיו חסרים לה מבית אמה.
+                </p>
+                <p>
+                    <strong class="text-blue-300">העיוורון והנס:</strong> בילדותה סבלה פיאף מדלקת קרנית קשה (Keratitis) שכמעט עיוורה אותה לחלוטין. הפרוצות מבית הבושת אספו כסף ולקחו אותה למסע עלייה לרגל לקברה של תרז הקדושה מליזייה כדי לבקש רחמים. ראייתה אכן חזרה אליה זמן קצר לאחר מכן, אירוע שפיאף ייחסה לנס מיסטי. מאז, נשאה תליון של הקדושה על צווארה עד יומה האחרון.
+                </p>
+                <p>
+                    <strong class="text-blue-300">אל במות הרחוב:</strong> בנעוריה חזרה לפריז, הצטרפה לאביה במופעי אקרובטיקה ברחוב, שם החלה לשיר לראשונה כדי לאסוף את הנדבות מהקהל, והבינה שקולה העצום הוא כלי ההישרדות האמיתי שלה.
+                </p>
+            </div>
         </section>
 
         <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
@@ -82,27 +92,54 @@
                 השירים הגדולים
             </h2>
             <div class="space-y-4">
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Vie en rose</span>
-                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">החיים בוורוד</span>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Edith+Piaf+-+La+Vie+en+rose" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        La Vie en rose
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">החיים בוורוד</span>
                 </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Non, je ne regrette rien</span>
-                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">לא, איני מתחרטת על דבר</span>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Edith+Piaf+-+Non+je+ne+regrette+rien" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Non, je ne regrette rien
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">לא, איני מתחרטת על דבר</span>
                 </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Hymne à l'amour</span>
-                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">המנון לאהבה (נכתב לזכרו של מרסל סרדן)</span>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Edith+Piaf+-+Hymne+a+l+amour" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Hymne à l'amour
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">המנון לאהבה (נכתב לזכרו של מרסל סרדן)</span>
                 </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Milord</span>
-                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">מילורד</span>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Edith+Piaf+-+Milord" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        Milord
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">מילורד</span>
                 </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
-                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Foule</span>
-                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">ההמון (ההמון הסוחף)</span>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
+                    <a href="https://www.youtube.com/results?search_query=Edith+Piaf+-+La+Foule" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        La Foule
+                    </a>
+                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">ההמון (ההמון הסוחף)</span>
                 </div>
             </div>
+        </section>
+
+        <!-- סעיף מקורות מחקר -->
+        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
+            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
+                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
+                <li><span class="font-mono text-gray-300">Piaf: A Biography</span> מאת מוניק לאנג (Monique Lange).</li>
+                <li>ארכיון עיריית פריז - תעודת הלידה הרשמית של אדית ג'ובאנה גסיון מבית החולים טנון, המפריכה את מיתוס הלידה ברחוב.</li>
+                <li><span class="font-mono text-gray-300">Piaf</span> מאת סימון ברטו (Simone Berteaut) - אחותה למחצה של פיאף, המספקת עדות ממקור ראשון (אם כי לעיתים מועצמת) על שנות הרחוב.</li>
+            </ul>
         </section>
     </main>
 
@@ -125,34 +162,20 @@
         </div>
     </div>
 
-    <!-- סקריפט להפעלת המודאל -->
     <script>
         const modal = document.getElementById('imageModal');
-        
         function openModal() {
             modal.classList.remove('hidden');
-            // השהייה קטנה כדי לאפשר לאנימציית ה-opacity לעבוד
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modal.classList.add('flex');
-            }, 10);
-            document.body.style.overflow = 'hidden'; // מניעת גלילה של הרקע
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
         }
-
         function closeModal() {
             modal.classList.add('opacity-0');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }, 300);
-            document.body.style.overflow = ''; // החזרת הגלילה
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
         }
-        
-        // סגירה גם באמצעות כפתור ESC
         document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
-                closeModal();
-            }
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
         });
     </script>
 </body>
