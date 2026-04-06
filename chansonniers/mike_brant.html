@@ -1,0 +1,242 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>מייק בראנט - מחקר ביוגרפי אולטרה-מפורט</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-tap-highlight-color: transparent; }
+        .text-glow-gold { text-shadow: 0 0 20px rgba(234, 179, 8, 0.4); }
+        .glass-panel { backdrop-filter: blur(12px); background-color: rgba(17, 24, 39, 0.75); }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-yellow-600 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <!-- ניווט -->
+        <nav class="mb-12">
+            <button onclick="window.location.href='../index.html'" class="inline-flex items-center text-yellow-500 hover:text-yellow-400 transition-all text-xl font-black group">
+                <span class="ml-3 text-3xl group-hover:-translate-x-2 transition-transform">&larr;</span> חזרה לארכיון השאנסון
+            </button>
+        </nav>
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-20 text-center">
+            <div class="w-64 h-64 mx-auto mb-10 rounded-[3.5rem] overflow-hidden border-4 border-yellow-500/30 shadow-[0_35px_70px_-15px_rgba(0,0,0,0.9)] relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/mike_brant.jpg" alt="מייק בראנט" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/500x500?text=Mike+Brant'">
+                <div class="absolute inset-0 bg-gradient-to-t from-yellow-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <div class="p-5 rounded-full glass-panel border border-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-7xl font-black text-white mb-4 tracking-tighter text-glow-gold">מייק בראנט</h1>
+            <p class="text-3xl text-gray-400 font-mono italic tracking-widest uppercase">Moshé Michael Brand</p>
+            <div class="mt-8 inline-flex items-center gap-4 bg-gray-900/80 p-1 rounded-full border border-gray-800 pr-8">
+                <span class="text-gray-400 font-bold tracking-widest text-lg">שנות חיים:</span>
+                <span class="bg-yellow-600 px-8 py-3 rounded-full text-white font-black text-2xl shadow-xl shadow-yellow-900/30">1947 - 1975</span>
+            </div>
+        </header>
+
+        <!-- מחקר אטימולוגי מורחב ומפוצל -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50 relative">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-yellow-500 rounded-2xl ml-5 shadow-[0_0_20px_rgba(234,179,8,0.5)]"></span>
+                ניתוח אטימולוגי מקיף של השמות
+            </h2>
+            <div class="grid gap-10">
+                <!-- שם פרטי מקורי 1 -->
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-yellow-500/30 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-gray-800 group-hover:text-yellow-600/20 transition-colors">01</span>
+                        <h3 class="text-3xl font-black text-yellow-500 mr-5">משה (Moshé)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        שמו הראשון הוא שם מקראי עברי מובהק. האטימולוגיה המקראית מציינת את המילים "כי מן המים משיתיהו". בשפה המצרית העתיקה, השורש <span class="text-white italic">msy</span> פירושו "ילד" או "נולד". משה היה שמו של אביו של פישל (אביו של מייק), שנספה בשואה, והשם ניתן לו כפעולת הנצחה עמוקה המאפיינת משפחות של שורדי שואה.
+                    </p>
+                </div>
+
+                <!-- שם פרטי מקורי 2 -->
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-yellow-500/30 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-gray-800 group-hover:text-yellow-600/20 transition-colors">02</span>
+                        <h3 class="text-3xl font-black text-yellow-500 mr-5">מיכאל (Michael)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        שם עברי המורכב מהשאלה הרטורית "מי כאל?". המשמעות היא "מי הוא כמו אלוהים?", המביעה ענווה והערצה לכוח עליון. מיכאל הוא אחד המלאכים המרכזיים במסורת היהודית, הנחשב למגן של עם ישראל. השם "מייק" (Mike) הוא הגרסה הבינלאומית המקוצרת לשם זה, שאומצה על ידו כדי להקל על הקהל הזר.
+                    </p>
+                </div>
+
+                <!-- שם משפחה ומותג -->
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-yellow-500/30 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-gray-800 group-hover:text-yellow-600/20 transition-colors">03</span>
+                        <h3 class="text-3xl font-black text-yellow-500 mr-5">ברנד / בראנט (Brand / Brant)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        שם המשפחה המקורי <strong>Brand</strong> הוא ממוצא יהודי-אשכנזי (גרמנית/יידיש), שמשמעותו "אש" או "שריפה". בעת הפריצה לצרפת ב-1970, הוצע לו לשנות את איות השם ל-<strong>Brant</strong>. השינוי נועד להעניק לשם צליל קשיח, מודרני וצרפתי יותר, תוך שמירה על השורש המקורי. האש שבשמו סימלה בצורה אירונית את הקריירה הבוערת והקצרה שלו.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- פרטי ילדות מורחבים -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-10 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-yellow-500 rounded-2xl ml-5"></span>
+                ילדות בצל השואה והשתיקה הגדולה
+            </h2>
+            <div class="space-y-8 text-2xl leading-relaxed text-gray-300 font-light text-justify">
+                <p>
+                    <strong class="text-yellow-500 font-bold">לידה במחנה מעצר:</strong> מייק בראנט נולד ב-1 בפברואר 1947 בנמל פמגוסטה שבקפריסין. הוריו, פישל וברוניה ברנד, היו שורדי שואה שניסו להעפיל לארץ ישראל בספינת המעפילים "תיאו", אך נתפסו על ידי הבריטים ונשלחו למחנות המעצר בקפריסין. הלידה בתנאי המחסור הקיצוניים סימנה את תחילתם של חיים מלאי נדודים ומאבק.
+                </p>
+                <p>
+                    <strong class="text-yellow-500 font-bold">השתיקה בחיפה:</strong> המשפחה עלתה ארצה ב-1947 והשתקעה בחיפה. פרט מרתק בילדותו של מייק הוא שהוא לא דיבר כלל עד גיל 5. הוריו חששו שהוא חירש-אילם, אך התברר כי הילד פשוט בחר לשתוק. כשהחל לדבר בסופו של דבר, הוא התחיל מיד לשיר. המוזיקה הייתה עבורו השפה שבה מצא את הקול שחסר לו בילדותו המוקדמת.
+                </p>
+                <p>
+                    <strong class="text-yellow-500 font-bold">המרד והגיטרה:</strong> מייק לא היה תלמיד מצטיין ונטה להסתבך. בגיל 11 הצטרף למקהלת בית הספר, אך את רוב זמנו בילה בנגינה על גיטרה בחוף הים של חיפה. בגיל 15 כבר הופיע בלהיטי רוקנרול במועדונים המקומיים ובבתי מלון, תוך שהוא מחקה בכישרון פנומנלי את אלביס פרסלי וטום ג'ונס, עוד לפני שלמד מילה אחת באנגלית או בצרפתית.
+                </p>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה והישגים -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-10 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-yellow-500 rounded-2xl ml-5"></span>
+                אידאולוגיה אמנותית והישגי ענק
+            </h2>
+            <div class="space-y-10 text-2xl text-gray-300 font-light">
+                <div class="bg-yellow-900/10 p-8 rounded-3xl border-r-8 border-yellow-600">
+                    <p><strong>הטרובדור של האהבה הטוטאלית:</strong> האידאולוגיה של מייק בראנט הייתה "התמסרות מוחלטת לרגש". הוא לא שר שירים קלילים, הוא שר המנונים של כאב, אהבה ותשוקה. הוא האמין שהזמר הוא מתווך של נשמה, ולכן הופעותיו היו דרמטיות, עם קול טנור עוצמתי שחדר את כל המחסומים התרבותיים. הוא ייצג את ה"חיים על הקצה" – רגש חשוף ללא מסכות.</p>
+                </div>
+                <p><strong>הישג - כיבוש צרפת בזמן שיא:</strong> מייק הגיע לפריז ב-1969 ללא ידיעת השפה. בתוך פחות משנה, עם הלהיט "Laisse-moi t'aimer", הוא הפך לאמן המושמע ביותר בצרפת. הוא היה האמן הזר הראשון שהצליח להדיח את השאנסונרים הוותיקים מראש המצעדים ולמכור מיליוני עותקים בפרק זמן כה קצר.</p>
+                <p><strong>הישג - סמל תרבות חוצה יבשות:</strong> מייק בראנט הפך לגשר תרבותי חי בין ישראל לצרפת. גם בשיא תהילתו העולמית, הוא הקפיד לחזור לישראל (במיוחד במלחמת יום הכיפורים להופיע בפני חיילים). הוא נותר עד היום הזמר הישראלי המצליח ביותר בכל הזמנים בזירה הבינלאומית, עם מכירות המוערכות בכ-40 מיליון אלבומים.</p>
+            </div>
+        </section>
+
+        <!-- רשימת שירים (מותאמת S25 Ultra) -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-yellow-500 rounded-2xl ml-5"></span>
+                חמשת היצירות הגדולות (יוטיוב)
+            </h2>
+            <div class="grid gap-6">
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Mike+Brant+-+Laisse-moi+t%27aimer', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-yellow-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Laisse-moi t'aimer</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">תני לי לאהוב אותך (הפריצה הגדולה)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Mike+Brant+-+C%27est+ma+prière', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-yellow-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">C'est ma prière</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">זוהי תפילתי (להיט ענק שהלחין בעצמו)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Mike+Brant+-+Qui+saura', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-yellow-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Qui saura</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">מי ידע (גרסה צרפתית ללהיט של חוסה פליסיאנו)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Mike+Brant+-+Rien+qu%27une+larme', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-yellow-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Rien qu'une larme</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">רק דמעה אחת</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Mike+Brant+-+Dis-lui', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-yellow-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Dis-lui</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">אמרי לה (גרסה צרפתית ל-Feelings של מוריס אלברט)</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- מקורות מחקר -->
+        <section class="mb-12 bg-gray-900/50 p-10 rounded-[3rem] border border-gray-800">
+            <h3 class="text-3xl font-black text-gray-300 mb-8 flex items-center">
+                <span class="text-yellow-500 mr-2 text-3xl">&bull;</span> מקורות למחקר המעמיק:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-4 text-2xl font-light">
+                <li><span class="font-mono text-gray-200 font-bold">Mike Brant: La voix du sacrifice</span> - ביוגרפיה מקיפה מאת ז'אן רנאר (Jean Renard).</li>
+                <li>ארכיוני ה-INA הצרפתי - תיעוד הופעותיו הטלוויזיוניות והראיונות בשיא הצלחתו.</li>
+                <li><span class="font-mono text-gray-200 font-bold">Laisse-moi t'aimer</span> - סרט דוקומנטרי של ארז לאופר על חייו וסופו הטראגי.</li>
+                <li>ארכיוני נמל אליס איילנד וקפריסין - לתיעוד מסע ההעפלה של משפחת ברנד.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- פוטר (S25 Ultra Optimized) -->
+    <footer class="w-full bg-[#050505] py-20 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-3xl font-black text-gray-400 mb-4 text-glow-gold">נבנה ומחקר ע"י ג'מיני ורם (2026)</p>
+            <p class="text-2xl mb-10">תצוגה אופטימלית ל-Samsung S25 Ultra</p>
+            <div class="h-1.5 w-48 bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-10 rounded-full opacity-60"></div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed italic border-t border-gray-900 pt-10">
+                קובץ זה חותם את המחקר המקיף על השאנסונרים הגדולים, בהוקרה למייק בראנט - הנסיך הישראלי של פריז.
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל תמונה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/98 backdrop-blur-2xl flex-col items-center justify-center opacity-0 transition-all duration-700" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-5xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-24 right-0 text-white hover:text-yellow-500 text-7xl font-light transition-colors p-6 focus:outline-none">&times;</button>
+            <img src="../images/mike_brant.jpg" alt="מייק בראנט" class="w-full h-auto max-h-[85vh] object-contain rounded-[3rem] shadow-[0_0_120px_rgba(234,179,8,0.3)] border border-gray-800">
+            <div class="mt-10 text-center">
+                <p class="text-white text-5xl font-black tracking-tight text-glow-gold">Mike Brant</p>
+                <p class="text-gray-400 text-2xl font-mono mt-3 tracking-widest uppercase">The Israeli Prince of Paris</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { 
+                modal.classList.remove('opacity-0'); 
+                modal.classList.add('flex'); 
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { 
+                modal.classList.add('hidden'); 
+                modal.classList.remove('flex'); 
+            }, 600);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape" && !modal.classList.contains('hidden')) closeModal();
+        });
+    </script>
+</body>
+</html>
+
+```
