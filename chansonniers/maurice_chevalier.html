@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>מוריס שבלייה - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/maurice_chevalier.jpg" alt="מוריס שבלייה" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">מוריס שבלייה</h1>
+            <p class="text-2xl text-gray-400 font-mono">Maurice Chevalier</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1888 - 1972
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי: מוריס (Maurice)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">נגזר מהשם הלטיני העתיק <span class="text-white font-mono">Mauritius</span>, שפירושו המילולי הוא "מורי" (Moorish) או תיאור לאדם "בעל עור כהה". השם התייחס במקור לתושבי מאוריטניה שביבשת אפריקה, ואומץ רבות באירופה בעקבות הקדוש הנוצרי מאוריציוס.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם אמצעי: אוגוסט (Auguste)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקורו בשפה הלטינית מהמילה <span class="text-white font-mono">Augustus</span>. משמעותו היא "נשגב", "נערץ", "מלכותי" או "מקודש". בעת העתיקה זה היה תואר יוקרתי שניתן לקיסרי רומא וסימל כבוד רב וסמכות אלוהית.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: שבלייה (Chevalier)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מילה צרפתית ידועה שפירושה המילולי הוא "אביר". מבחינה אטימולוגית היא נגזרת מהמילה הלטינית המאוחרת <span class="text-white font-mono">caballarius</span> (רוכב סוסים). היסטורית, שם משפחה זה הוענק לרוב לאנשים ששירתו כאבירים בשדה הקרב או לעובדים באורוות של משפחות אצולה בימי הביניים.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                מוריס שבלייה נולד במנילמונטן (Ménilmontant) - רובע פועלים עני וקשה בפריז. אביו, שהיה צבעי ושתיין כבד, נטש את המשפחה כשמוריס היה רק בן שמונה. נטישה זו הותירה את אמו, עליה העריץ כל חייו, לגדל לבדה את ילדיה תוך עבודה מפרכת כתופרת. המצב הכלכלי אילץ את שבלייה לעזוב את בית הספר כבר בגיל 10 כדי לעזור בפרנסת המשפחה. הוא עבד בעבודות כפיים כשוליית נגר, מוכר בובות, ואף ניסה את כוחו כאקרובט (עד שפציעה קטעה חלום זה). את צעדיו הראשונים בעולם הבמה עשה כששר בבתי קפה קטנים עבור פרוטות, שם גילה את כוחו לבדר קהל, להצחיק ולהקסים.
+            </p>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>הישגים פורצי דרך בהוליווד:</strong> שבלייה היה אחד האמנים הצרפתים הראשונים והגדולים ביותר שכבשו את ארצות הברית והוליווד. הוא היה מועמד פעמיים לפרס האוסקר בשנות ה-30, וזכה בפרס אוסקר לשם כבוד בשנת 1958. הוא קיבע את דמות "המאהב הצרפתי" (French Lover) בתודעה העולמית.</p>
+                <p><strong>אידאולוגיה וסמל תרבותי:</strong> בניגוד לזמרי השוליים של תקופתו, האידאולוגיה האמנותית של שבלייה סבבה סביב אלגנטיות, קסם אישי (Charm) ואסקפיזם מעודן. הסמלים המסחריים הבלתי נפרדים ממנו היו כובע הקש שטוח-התיתורה (Canotier), חליפת הטוקסידו היוקרתית ושרבוב השפתיים המפורסם תוך כדי חיוך. הוא ייצג את הפריזאיות השנונה והאופטימית המנותקת מקשיי היום-יום.</p>
+                <p><strong>תקופת מלחמת העולם השנייה (מחלוקת וטיהור שמו):</strong> במהלך הכיבוש הנאצי, שהה בצרפת ואף הופיע מול חיילים בגרמניה, דבר שהוביל להאשמות כבדות בשיתוף פעולה (קולבורציון) מיד לאחר המלחמה. עם זאת, הוא הצליח לנקות את שמו לחלוטין לאחר שהוכיח כי הסכים להופיע בגרמניה אך ורק בתמורה לשחרורם של שבויי מלחמה צרפתים ממחנות עבודה. בעקבות כך חזר להופיע ולהצליח בגדול.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Valentine</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">ולנטין</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Louise</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">לואיז (נכתב כפסקול סרט הוליוודי)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Ma Pomme</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">התפוח שלי (בסלנג צרפתי: "העצמי שלי" או "פרצופי")</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Thank Heaven for Little Girls</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">תודה לאל על ילדות קטנות (מתוך הסרט המצליח 'ז'יז'י')</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Prosper (Yop la boum)</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">פרוספר (יופ לה בום)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/maurice_chevalier.jpg" alt="מוריס שבלייה" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Maurice Chevalier</p>
+        </div>
+    </div>
+
+    <!-- סקריפט להפעלת המודאל -->
+    <script>
+        const modal = document.getElementById('imageModal');
+        
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('flex');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+            document.body.style.overflow = '';
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
