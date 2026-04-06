@@ -1,0 +1,243 @@
+```html
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>כריסטוף - מחקר ביוגרפי אולטרה-מפורט</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-tap-highlight-color: transparent; }
+        .text-glow-blue { text-shadow: 0 0 20px rgba(30, 64, 175, 0.8); }
+        .glass-panel { backdrop-filter: blur(12px); background-color: rgba(17, 24, 39, 0.7); }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-700 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <!-- ניווט -->
+        <nav class="mb-12">
+            <button onclick="window.location.href='../index.html'" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-all text-xl font-black group">
+                <span class="ml-3 text-3xl group-hover:-translate-x-2 transition-transform">&larr;</span> חזרה לארכיון השאנסון
+            </button>
+        </nav>
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-20 text-center">
+            <div class="w-64 h-64 mx-auto mb-10 rounded-[3.5rem] overflow-hidden border-4 border-gray-800 shadow-[0_35px_70px_-15px_rgba(0,0,0,0.8)] relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/christophe.jpg" alt="כריסטוף" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/500x500?text=Christophe'">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <div class="p-5 rounded-full glass-panel border border-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-7xl font-black text-white mb-4 tracking-tighter text-glow-blue">כריסטוף</h1>
+            <p class="text-3xl text-gray-400 font-mono italic tracking-widest">Daniel Bevilacqua</p>
+            <div class="mt-8 inline-flex items-center gap-4 bg-gray-900/80 p-1 rounded-full border border-gray-800 pr-8">
+                <span class="text-gray-400 font-bold tracking-widest text-lg">שנות חיים:</span>
+                <span class="bg-blue-700 px-8 py-3 rounded-full text-white font-black text-2xl shadow-xl shadow-blue-900/30">1945 - 2020</span>
+            </div>
+        </header>
+
+        <!-- מחקר אטימולוגי מורחב ומפוצל -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50 relative">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-600 rounded-2xl ml-5 shadow-[0_0_20px_rgba(37,99,235,0.6)]"></span>
+                ניתוח אטימולוגי של השם המלא
+            </h2>
+            <div class="grid gap-10">
+                <!-- שם פרטי מקורי -->
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-blue-600/40 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-blue-900/30 group-hover:text-blue-600/20 transition-colors">01</span>
+                        <h3 class="text-3xl font-black text-blue-400 mr-5">דניאל (Daniel)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        מקורו בשם המקראי העברי <strong>דניאל</strong>. השם מורכב משתי מילים: "דן" (שפט) ו-"אל" (אלוהים). המשמעות היא "אלוהים הוא השופט שלי" או "דין אלוהים". זהו שם המייצג יושרה, כוח רוחני וחוסן, ערכים שבלטו באישיותו האינדיבידואליסטית של הזמר.
+                    </p>
+                </div>
+
+                <!-- שם משפחה מקורי -->
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-blue-600/40 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-blue-900/30 group-hover:text-blue-600/20 transition-colors">02</span>
+                        <h3 class="text-3xl font-black text-blue-400 mr-5">בווילאקווה (Bevilacqua)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        שם משפחה איטלקי מרתק המורכב משתי מילים: <span class="text-white font-mono italic">Bevi</span> (שתה) ו-<span class="text-white font-mono italic">l'acqua</span> (את המים). המשמעות המילולית היא "שתה את המים". היסטורית, שם זה ניתן ככינוי לאנשים שהיו ידועים בכך שאינם שותים יין אלא רק מים, או לעיתים ככינוי אירוני לאלו שהיו שותים יין בכמויות גדולות. השם מעיד על שורשיו האיטלקיים העמוקים של כריסטוף (סבו היגר לאזור פריז מאיטליה).
+                    </p>
+                </div>
+
+                <!-- שם במה -->
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-blue-600/40 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-blue-900/30 group-hover:text-blue-600/20 transition-colors">03</span>
+                        <h3 class="text-3xl font-black text-blue-400 mr-5">כריסטוף (Christophe)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        השם נגזר מהשם היווני <span class="text-white font-mono italic">Christophoros</span>. המשמעות היא "נושא המשיח". כריסטוף בחר בשם זה כשם במה בתחילת שנות ה-60, כשהוא מחפש שם קצר, קליט ובעל ניחוח מודרני אך קלאסי בו זמנית, כזה שיפריד בין זהותו הפרטית לבין דמות ה"דנדי" הלילית שיצר.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- פרטי ילדות מורחבים -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-10 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5 shadow-[0_0_20px_rgba(37,99,235,0.6)]"></span>
+                ילדות בצל הג'וקבוקס והמרד בלימודים
+            </h2>
+            <div class="space-y-8 text-2xl leading-relaxed text-gray-300 font-light">
+                <p>
+                    <strong class="text-blue-300 font-bold">שורשים וניגודים:</strong> דניאל בווילאקווה נולד בז'וביסי-סיר-אורז' (Juvisy-sur-Orge), פרוור של פריז. הוא גדל בבית שבו האב היה יצרן מכשירים לחימום וסבו היה מהגר איטלקי שבנה את עצמו במו ידיו. כבר כילד, דניאל הפגין חוסר עניין מוחלט במסגרות. הוא נחשב לילד "מורד" שסולק ממספר בתי ספר בגלל התנהגות ואי-ציות.
+                </p>
+                <p>
+                    <strong class="text-blue-300 font-bold">ההתאהבות במוזיקה האמריקאית:</strong> הנחמה היחידה שלו הייתה בבתי הקפה המקומיים, שם עמד שעות מול ה"ג'וקבוקס" (מכונת התקליטים). הוא הוקסם מהבלוז, מהרוקנרול של אלביס פרסלי ומהג'אז. בגיל 16 הוא הקים את להקתו הראשונה, "La Gachette" (ההדק), והחל להופיע במועדונים קטנים כשהוא משלב בין הצרפתית לבין הצליל האמריקאי המחוספס.
+                </p>
+                <p>
+                    <strong class="text-blue-300 font-bold">היצירה בבדידות:</strong> ילדותו התאפיינה בחיפוש אחר זהות. הוא בילה לילות שלמים בחדרו, מפרק ומרכיב מכשירי חשמל וגיטרות, מה שפיתח אצלו חוש טכני יוצא דופן לסאונד – דבר שהפך למאפיין המרכזי שלו כאמן בוגר.
+                </p>
+            </div>
+        </section>
+
+        <!-- אידאולוגיה והישגים -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-10 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5 shadow-[0_0_20px_rgba(37,99,235,0.6)]"></span>
+                אידאולוגיה אמנותית והישגי ענק
+            </h2>
+            <div class="space-y-10 text-2xl text-gray-300 font-light">
+                <div class="bg-blue-900/10 p-8 rounded-3xl border-r-8 border-blue-600">
+                    <p><strong>ה"דנדי" של הלילה:</strong> האידאולוגיה של כריסטוף הייתה בנויה סביב מושג ה"דנדיזם" – אדם המקדיש את חייו לאסתטיקה, אלגנטיות ואינדיבידואליזם. הוא היה ידוע כ"איש לילה" שער בלילות וישן בימים. הוא האמין שהאמנות צריכה להיות חוויה רב-חושית, ולכן הקדיש שנים לחיפוש אחר "הסאונד המושלם", תוך שימוש בסינתיסייזרים נדירים ובטכניקות הקלטה חדשניות.</p>
+                </div>
+                <p><strong>הישג - הפריצה ההיסטורית עם "Aline":</strong> בשנת 1965, כשהוא רק בן 20, כריסטוף שחרר את הבלדה "Aline". השיר הפך לתופעה תרבותית ומכר מיליוני עותקים בתוך שבועות, והפך לאחד השירים המושמעים ביותר בהיסטוריה של צרפת. הישג זה קיבע אותו כסמל של רומנטיקה מודרנית.</p>
+                <p><strong>הישג - שיתוף הפעולה עם ז'אן מישל ז'אר:</strong> בשנות ה-70, כריסטוף שיתף פעולה עם אשף האלקטרוניקה ז'אן מישל ז'אר באלבום המופת <span class="italic text-white">Les Mots bleus</span>. האלבום נחשב לאבן דרך ששינתה את פני השאנסון והכניסה לתוכו אלמנטים אלקטרוניים וחלליים, מה שזיכה את כריסטוף בתואר "העתידן של המוזיקה הצרפתית".</p>
+                <p><strong>סיבת היצירה:</strong> הקובץ נבנה כחלק ממחקר מקיף להוקרה והנצחת דמותו של כריסטוף כאמן שגשר בין הבלדה הרומנטית לניסיונות אלקטרוניים נועזים.</p>
+            </div>
+        </section>
+
+        <!-- רשימת שירים (מותאמת S25 Ultra) -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5"></span>
+                חמשת היצירות הגדולות (יוטיוב)
+            </h2>
+            <div class="grid gap-6">
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Christophe+-+Aline', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-red-600 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Aline</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">אלין (הלהיט ששינה את צרפת)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Christophe+-+Les+Mots+bleus', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-red-600 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Les Mots bleus</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">המילים הכחולות (יצירת מופת אלקטרו-שאנסון)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Christophe+-+Les+Marionnettes', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-red-600 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Les Marionnettes</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">מריונטות</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Christophe+-+Succes+fou', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-red-600 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Succès fou</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">הצלחה מטורפת</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Christophe+-+La+Dolce+Vita', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-red-600 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-red-600/10 p-4 rounded-2xl group-hover:bg-red-600 transition-colors">
+                            <svg class="w-10 h-10 text-red-600 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">La Dolce Vita</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">לה דולצ'ה ויטה (החיים המתוקים)</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- מקורות מחקר -->
+        <section class="mb-12 bg-gray-900/50 p-10 rounded-[3rem] border border-gray-800">
+            <h3 class="text-3xl font-black text-gray-300 mb-8 flex items-center">
+                <span class="text-blue-500 mr-2 text-3xl">&bull;</span> מקורות למחקר המעמיק:
+            </h3>
+            <ul class="list-disc list-inside text-gray-400 space-y-4 text-2xl font-light">
+                <li><span class="font-mono text-gray-200 font-bold">Christophe, résonance de l'inconnu</span> - ביוגרפיה מקיפה מאת ז'אן-לואי בלה (Jean-Louis Bellet).</li>
+                <li>ארכיוני ה-INA הצרפתי - תיעוד הופעותיו הטלוויזיוניות והראיונות הליליים לאורך 50 שנה.</li>
+                <li><span class="font-mono text-gray-200 font-bold">Vivre la nuit</span> - תיעוד אישי על אורח חייו כ"דנדי" לילי.</li>
+                <li>ארכיון המכון הלאומי לסטטיסטיקה (INSEE) - לתיעוד שורשי משפחת בווילאקווה בצרפת.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- פוטר (S25 Ultra Optimized) -->
+    <footer class="w-full bg-[#050505] py-20 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-3xl font-black text-gray-400 mb-4 text-glow-blue">נבנה ומחקר ע"י ג'מיני ורם (2026)</p>
+            <p class="text-2xl mb-10">תצוגה אופטימלית ל-Samsung S25 Ultra</p>
+            <div class="h-1.5 w-48 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto mb-10 rounded-full opacity-60"></div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed italic border-t border-gray-900 pt-10">
+                הקובץ נוצר למען מחקר ביוגרפי, הרפתקאות היסטוריות והוקרה לאמן שהגדיר מחדש את הצליל הצרפתי.
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל תמונה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/98 backdrop-blur-2xl flex-col items-center justify-center opacity-0 transition-all duration-700" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-5xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-24 right-0 text-white hover:text-blue-400 text-7xl font-light transition-colors p-6 focus:outline-none">&times;</button>
+            <img src="../images/christophe.jpg" alt="כריסטוף" class="w-full h-auto max-h-[85vh] object-contain rounded-[3rem] shadow-[0_0_120px_rgba(30,64,175,0.5)] border border-gray-800">
+            <div class="mt-10 text-center">
+                <p class="text-white text-5xl font-black tracking-tight text-glow-blue">Christophe</p>
+                <p class="text-gray-400 text-2xl font-mono mt-3 tracking-widest uppercase">The Blue Word Master</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { 
+                modal.classList.remove('opacity-0'); 
+                modal.classList.add('flex'); 
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { 
+                modal.classList.add('hidden'); 
+                modal.classList.remove('flex'); 
+            }, 600);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape" && !modal.classList.contains('hidden')) closeModal();
+        });
+    </script>
+</body>
+</html>
+
+```
