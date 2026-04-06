@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ז'ורז' ברסנס - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/georges_brassens.jpg" alt="ז'ורז' ברסנס" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">ז'ורז' ברסנס</h1>
+            <p class="text-2xl text-gray-400 font-mono">Georges Brassens</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1921 - 1981
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי: ז'ורז' (Georges)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור יווני (<span class="text-white font-mono">Georgios</span>). מורכב מהמילים "ge" (אדמה) ו-"ergon" (עבודה). המשמעות היא "עובד אדמה" או "איכר". שם המשתלב היטב עם דימויו של ברסנס כאדם פשוט ואותנטי המחובר לאדמה ולעם.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם אמצעי ראשון: שארל (Charles)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור גרמאני עתיק. משמעותו המילולית היא "אדם חופשי" או "גבר חופשי".</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: ברסנס (Brassens)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה המגיע מאזור אוקסיטניה (דרום צרפת), כנראה מבוסס על השורש המקומי "brasa" (גחלת/אש) או נגזר משם של ישוב או חווה קדומה. ברסנס שמר על שמו המקורי לאורך כל הקריירה, כהצהרה של נאמנות לשורשיו העממיים.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                נולד בעיר החוף סֵט (Sète) שבדרום צרפת. אביו היה קבלן בניין אתאיסט בעל אופי נוח, ואמו (ממוצא איטלקי) הייתה קתולית אדוקה ושמרנית. הבית היה תמיד מלא במוזיקה. בנעוריו היה תלמיד גרוע שסלד ממסגרות, ואף הסתבך בפרשת גניבות קטנות עם חבריו שהובילה לסילוקו מבית הספר. אירוע זה עיצב את השקפת עולמו המורדת כלפי הממסד. בעקבות כך, עזב ב-1940 את הבית ונסע לפריז לחיות אצל דודתו. במהלך מלחמת העולם השנייה נשלח על ידי הנאצים לעבודות כפייה בגרמניה (STO), משם נמלט בחופשתו הראשונה וירד למחתרת בפריז, שם החל לכתוב את שיריו הראשונים.
+            </p>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>אידאולוגיה (אנרכיזם אינדיבידואליסטי):</strong> ברסנס היה "טרובדור מודרני". האידאולוגיה שלו דגלה בחופש אישי מוחלט, בוז עמוק לצביעות הבורגנית, לממסד הדתי, למערכת המשפט והמשטרה, ולכל סמכות כופה. הוא התייחס לעצמו כאנרכיסט פציפיסט. שיריו היו לרוב סאטיריים, לעיתים שערורייתיים ובוטים, אך תמיד עטופים בחמלה כלפי האנשים הפשוטים ושולי החברה.</p>
+                <p><strong>סגנון ייחודי ומינימליסטי:</strong> בניגוד להפקות הראוותניות של עמיתיו, ברסנס הופיע תמיד כשהוא מלווה את עצמו בגיטרה קלאסית בלבד (לפעמים עם נגן קונטרבס שני), ישוב על שרפרף, כשהטקסט המשובח תופס את מרכז הבמה. הלחנים שלו נראו פשוטים אך היו מורכבים וג'אזיים במבנה שלהם.</p>
+                <p><strong>הישג ספרותי נדיר:</strong> למרות התדמית המרדנית שלו, הוא כתב בשפה צרפתית גבוהה ומדויקת להפליא. הוא היה אחד הזמרים היחידים שזכו (ב-1967) ב"פרס השירה הגדול" (Grand Prix de Poésie) מטעם האקדמיה הצרפתית – הוכחה לכך שהשירה המושרת נחשבת לספרות גבוהה לכל דבר ועניין בצרפת.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Chanson pour l'Auvergnat</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">שיר למען איש אוברן (שיר תודה על טוב לב לאדם עני)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Le Gorille</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">הגורילה (שיר סאטירי חריף שצונזר שנים רבות נגד עונש המוות)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Les Copains d'abord</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">החברים לפני הכל</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Mauvaise Réputation</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">המוניטין הרע (הצהרת העצמאות האישית שלו)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/georges_brassens.jpg" alt="ז'ורז' ברסנס" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Georges Brassens</p>
+        </div>
+    </div>
+
+    <!-- סקריפט להפעלת המודאל -->
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
