@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>שארל אזנבור - מחקר</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+    <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
+        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
+            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
+        </a>
+        
+        <header class="mb-14 text-center">
+            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
+                <img src="../images/charles_aznavour.jpg" alt="שארל אזנבור" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-3">שארל אזנבור</h1>
+            <p class="text-2xl text-gray-400 font-mono">Charles Aznavour</p>
+            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
+                שנות חיים: 1924 - 2018
+            </div>
+        </header>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אטימולוגיה ומקור השם המלא
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי (במקור): שאהנור (Shahnour)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור ארמני. מורכב מהמילה "Shah" (מלך או אצילי - מושג השאול מפרסית) ו-"Nour" (אור). המשמעות היא "אור מלכותי" או "אור האצולה". שם זה שונה מאוחר יותר על ידי אחות בבית החולים הצרפתי שלא הצליחה להגות אותו, ולכן רשמה אותו כ"שארל" (Charles).</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם אמצעי: ואגינאג (Vaghinag)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור ארמני מסורתי עתיק. מסמל "מגן", "שריון" או לעיתים "אלון". זהו שם הניתן מתוך רצון להעניק חוסן והגנה לרך הנולד מפני תלאות העולם.</p>
+                </div>
+                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: אזנבוריאן (Aznavourian)</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed">מקור ארמני מובהק. הסיומת "-יאן" (-ian) משמעותה "הבן של" או "ממשפחת". השורש "Aznavour" נגזר מהמילה הארמנית העתיקה שפירושה "אציל", "ענק" או "גיבור". יחד: "הבן של האציל". קוצר על ידו לאזנבור לנוחות הביטוי וההשתלבות בתרבות בצרפת.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                ילדות
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+                אזנבור נולד בפריז למהגרים ארמנים, מישה וקנאר, שנמלטו מרצח העם הארמני בטורקיה וחיכו בצרפת לוויזה לארצות הברית (שמעולם לא הגיעה). הוא גדל באווירה בוהמיינית ומוזיקלית, כשאביו היה זמר במקור ואמו שחקנית תיאטרון. למרות העוני, הבית היה מלא תמיד בשירה, תיאטרון ואמנים גולים. הוא נשר מבית הספר כבר בגיל 9 כדי להתחיל להופיע כילד-שחקן בתיאטרון ולעזור בפרנסה, מה שעיצב את יכולת ההגשה הדרמטית והייחודית שלו בהמשך כזמר. בתקופת מלחמת העולם השנייה, משפחתו הסתירה יהודים ואנשי מחתרת בדירתם הקטנה בפריז.
+            </p>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                אידאולוגיה והישגים
+            </h2>
+            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
+                <p><strong>משורר האהבה והבוהמה:</strong> אזנבור כונה "פרנק סינטרה הצרפתי". האידאולוגיה האמנותית שלו הייתה כתיבה נוקבת וכנה על נושאים שהיו לעיתים בגדר טאבו (אהבה נכזבת, התבגרות, הומוסקסואליות, וחיים בוהמייניים). קולו המחוספס והמיוחד, שלווה בביצועים דרמטיים, הפך לסמלו המסחרי.</p>
+                <p><strong>הישגים בלתי נתפסים:</strong> במהלך קריירה שנמשכה מעל 80 שנה, אזנבור כתב והלחין כ-1,200 שירים, הוקלט בשמונה שפות שונות (כולל אנגלית, איטלקית וספרדית), ומכר למעלה מ-180 מיליון תקליטים ברחבי העולם. בשנת 1998 זכה בתואר "בדרן המאה" של CNN וטיים מגזין, כשהוא עוקף שמות כמו אלביס פרסלי ובוב דילן.</p>
+                <p><strong>שגריר הומניטרי:</strong> מעבר למוזיקה, הייתה לו מחויבות עמוקה לשורשיו. הוא תרם תרומה פוליטית והומניטרית עצומה לארמניה (במיוחד לאחר רעידת האדמה הגדולה שם), ומונה לשגריר ארמניה בשווייץ ונציג קבוע באו"ם מטעם המדינה.</p>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
+                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
+                השירים הגדולים
+            </h2>
+            <div class="space-y-4">
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">La Bohème</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">הבוהמה (חיי אמנים צוענים וחופשיים במונמארטר)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Emmenez-moi</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">קחו אותי מכאן (שיר כמיהה לארץ הפלאות)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">She (Tous les visages de l'amour)</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">היא (כל פניה של האהבה - זכה להצלחה עולמית אדירה)</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Hier encore</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">רק אתמול (בעברית מוכר גם כ"אתמול היית")</span>
+                </div>
+                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-blue-500/50 transition-colors">
+                    <span class="font-bold text-white text-2xl group-hover:text-blue-400 transition-colors">Que c'est triste Venise</span>
+                    <span class="italic text-gray-400 text-xl mt-2 md:mt-0">כמה עצובה היא ונציה (כשאין אהבה)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
+            <p class="mb-4">שנת יצירה: 2026</p>
+            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
+                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            </p>
+        </div>
+    </footer>
+
+    <!-- מודאל התמונה הצפה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
+            <img src="../images/charles_aznavour.jpg" alt="שארל אזנבור" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
+            <p class="text-gray-400 text-xl mt-4 font-mono">Charles Aznavour</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        });
+    </script>
+</body>
+</html>
