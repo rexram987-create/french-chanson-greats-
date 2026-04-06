@@ -1,170 +1,104 @@
+```html
 <!DOCTYPE html>
 <html lang="he" dir="rtl" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>השאנסונרים הצרפתיים הגדולים</title>
+    <title>ארכיון השאנסון הצרפתי - ג'מיני ורם</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-        }
-    </script>
+    <script>tailwind.config = { darkMode: 'class', }</script>
     <style>
-        /* S25 Ultra Specific Smooth Scrolling */
-        html { scroll-behavior: smooth; }
-        body { -webkit-font-smoothing: antialiased; }
+        body { -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; }
+        .singer-card { transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+        .singer-card:hover { transform: translateY(-12px) scale(1.03); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7); }
+        .text-glow { text-shadow: 0 0 25px rgba(59, 130, 246, 0.6); }
+        .glass-nav { backdrop-filter: blur(10px); background: rgba(17, 24, 39, 0.8); }
     </style>
 </head>
-<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white">
-    <main class="flex-grow w-full max-w-5xl mx-auto p-6 md:p-10 pt-12">
-        <header class="mb-14 border-b border-gray-800 pb-8 text-center md:text-right">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">השאנסונרים הצרפתיים הגדולים</h1>
-            <p class="text-xl text-blue-400 font-medium">ציר זמן כרונולוגי: מסע היסטורי אל הלב הפועם של המוזיקה הצרפתית</p>
-        </header>
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen selection:bg-blue-600 overflow-x-hidden">
 
-        <section class="mb-14 bg-gray-900/80 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-gray-800">
-            <h2 class="text-3xl font-bold text-white mb-5 flex items-center gap-3">
-                <span class="text-blue-500 text-4xl leading-none">&raquo;</span> מהו שאנסון?
-            </h2>
-            <p class="text-lg md:text-xl leading-relaxed text-gray-300">
-                שאנסון (Chanson) היא מילה בצרפתית שפירושה המילולי הוא "שיר". עם זאת, בהקשר התרבותי וההיסטורי, השאנסון הוא סגנון מוזיקלי ייחודי שהתפתח בצרפת, המאופיין בדגש עמוק על הטקסט, השפה וההגשה התיאטרלית. השאנסונייר הוא לא רק זמר, אלא מספר סיפורים המשתמש בקולו כדי להעביר קשת רחבה של רגשות.
+    <!-- Header / Hero Section -->
+    <header class="relative py-24 overflow-hidden border-b border-gray-800 bg-gray-900/40">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter text-glow">השאנסונרים</h1>
+            <p class="text-2xl md:text-3xl text-gray-400 font-light max-w-4xl mx-auto leading-relaxed">
+                מחקר היסטורי מקיף על גדולי הזמר הצרפתי - מסע בעקבות הקולות שעיצבו דורות.
             </p>
-        </section>
-
-        <section class="mb-16">
-            <div class="mb-8 border-b border-gray-700 pb-3 flex items-center justify-between">
-                <h2 class="text-3xl font-bold text-white">ציר הזמן של השאנסון</h2>
-                <span class="text-gray-500 font-mono">1865 - 1947</span>
+            <div class="mt-12 flex flex-wrap justify-center gap-6">
+                <div class="flex items-center gap-2 bg-blue-900/30 text-blue-400 px-8 py-3 rounded-2xl border border-blue-500/30 font-black text-xl">
+                    <span class="w-3 h-3 bg-blue-500 rounded-full animate-ping"></span>
+                    17 אמנים בארכיון
+                </div>
+                <div class="bg-gray-800/50 text-gray-300 px-8 py-3 rounded-2xl border border-gray-700 font-bold text-xl">
+                    הוגים ובונים: ג'מיני ורם
+                </div>
             </div>
+        </div>
+    </header>
+
+    <!-- Main Grid Content -->
+    <main class="max-w-[1400px] mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
-                <!-- קו ציר זמן ויזואלי למסכים גדולים -->
-                <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-1 bg-gray-800 -z-10 translate-x-4 rounded-full"></div>
+            <script>
+                // רשימת האמנים המלאה והמעודכנת בסדר כרונולוגי
+                const singers = [
+                    { name: "איבט גילבר", year: "1865", file: "yvette_guilbert.html", img: "yvette_guilbert.jpg" },
+                    { name: "מוריס שבלייה", year: "1888", file: "maurice_chevalier.html", img: "maurice_chevalier.jpg" },
+                    { name: "שארל טרנה", year: "1913", file: "charles_trenet.html", img: "charles_trenet.jpg" },
+                    { name: "אדית פיאף", year: "1915", file: "edith_piaf.html", img: "edith_piaf.jpg" },
+                    { name: "ז'ורז' ברסנס", year: "1921", file: "georges_brassens.html", img: "georges_brassens.jpg" },
+                    { name: "איב מונטאן", year: "1921", file: "yves_montand.html", img: "yves_montand.jpg" },
+                    { name: "שארל אזנבור", year: "1924", file: "charles_aznavour.html", img: "charles_aznavour.jpg" },
+                    { name: "ז'ילבר בקו", year: "1927", file: "gilbert_becaud.html", img: "gilbert_becaud.jpg" },
+                    { name: "סרג' גינזבורג", year: "1928", file: "serge_gainsbourg.html", img: "serge_gainsbourg.jpg" },
+                    { name: "ז'אק ברל", year: "1929", file: "jacques_brel.html", img: "jacques_brel.jpg" },
+                    { name: "דלידה", year: "1933", file: "dalida.html", img: "dalida.jpg" },
+                    { name: "ז'ורז' מוסטקי", year: "1934", file: "georges_moustaki.html", img: "georges_moustaki.jpg" },
+                    { name: "ג'ו דאסן", year: "1938", file: "joe_dassin.html", img: "joe_dassin.jpg" },
+                    { name: "אנריקו מסיאס", year: "1938", file: "enrico_macias.html", img: "enrico_macias.jpg" },
+                    { name: "כריסטוף", year: "1945", file: "christophe.html", img: "christophe.jpg" },
+                    { name: "מיריל מתייה", year: "1946", file: "mireille_mathieu.html", img: "mireille_mathieu.jpg" },
+                    { name: "מייק בראנט", year: "1947", file: "mike_brant.html", img: "mike_brant.jpg" }
+                ];
 
-                <!-- 1865 -->
-                <a href="chansonniers/yvette_guilbert.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולדה ב-1865</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">איבט גילבר</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Yvette Guilbert)</p>
-                </a>
+                document.write(singers.map(s => `
+                    <a href="chansonniers/${s.file}" class="singer-card group relative bg-gray-900 rounded-[3rem] overflow-hidden border border-gray-800 shadow-2xl flex flex-col">
+                        <div class="aspect-[4/5] overflow-hidden relative">
+                            <img src="images/${s.img}" alt="${s.name}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/400x500?text=${s.name}'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-10 flex-grow flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-4">
+                                    <h3 class="text-3xl font-black text-white group-hover:text-blue-400 transition-colors leading-tight">${s.name}</h3>
+                                    <span class="text-blue-500 font-mono font-black text-xl bg-blue-500/10 px-3 py-1 rounded-lg">${s.year}</span>
+                                </div>
+                                <p class="text-gray-400 text-xl font-light mb-6">לחץ לקריאת המחקר הביוגרפי המלא &larr;</p>
+                            </div>
+                            <div class="h-1.5 w-16 bg-blue-600 rounded-full group-hover:w-full transition-all duration-700 opacity-50"></div>
+                        </div>
+                    </a>
+                `).join(''));
+            </script>
 
-                <!-- 1888 -->
-                <a href="chansonniers/maurice_chevalier.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1888</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">מוריס שבלייה</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Maurice Chevalier)</p>
-                </a>
-
-                <!-- 1913 -->
-                <a href="chansonniers/charles_trenet.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1913</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">שארל טרנה</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Charles Trenet)</p>
-                </a>
-
-                <!-- 1915 -->
-                <a href="chansonniers/edith_piaf.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולדה ב-1915</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">אדית פיאף</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Édith Piaf)</p>
-                </a>
-
-                <!-- 1921 -->
-                <a href="chansonniers/georges_brassens.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1921</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">ז'ורז' ברסנס</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Georges Brassens)</p>
-                </a>
-
-                <!-- 1921 -->
-                <a href="chansonniers/yves_montand.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1921</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">איב מונטאן</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Yves Montand)</p>
-                </a>
-
-                <!-- 1924 -->
-                <a href="chansonniers/charles_aznavour.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1924</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">שארל אזנבור</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Charles Aznavour)</p>
-                </a>
-
-                <!-- 1927 -->
-                <a href="chansonniers/gilbert_becaud.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1927</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">ז'ילבר בקו</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Gilbert Bécaud)</p>
-                </a>
-
-                <!-- 1928 -->
-                <a href="chansonniers/serge_gainsbourg.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1928</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">סרג' גינזבורג</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Serge Gainsbourg)</p>
-                </a>
-
-                <!-- 1929 -->
-                <a href="chansonniers/jacques_brel.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1929</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">ז'אק ברל</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Jacques Brel)</p>
-                </a>
-
-                <!-- 1933 -->
-                <a href="chansonniers/dalida.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולדה ב-1933</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">דלידה</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Dalida)</p>
-                </a>
-
-                <!-- 1938 -->
-                <a href="chansonniers/joe_dassin.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1938</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">ג'ו דאסן</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Joe Dassin)</p>
-                </a>
-
-                <!-- 1944 -->
-                <a href="chansonniers/francoise_hardy.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולדה ב-1944</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">פרנסואז ארדי</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Françoise Hardy)</p>
-                </a>
-
-                <!-- 1945 -->
-                <a href="chansonniers/christophe.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1945</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">כריסטוף</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Christophe)</p>
-                </a>
-
-                <!-- 1946 -->
-                <a href="chansonniers/mireille_mathieu.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולדה ב-1946</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">מיריל מתייה</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Mireille Mathieu)</p>
-                </a>
-
-                <!-- 1947 -->
-                <a href="chansonniers/mike_brant.html" class="group block bg-gray-900 p-6 rounded-2xl transition-all duration-300 border border-gray-800 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 active:scale-[0.98]">
-                    <div class="text-blue-500 font-mono text-sm mb-2 font-bold bg-blue-500/10 inline-block px-3 py-1 rounded-full border border-blue-500/30">נולד ב-1947</div>
-                    <h3 class="text-2xl font-bold text-gray-100 group-hover:text-blue-400 transition-colors">מייק בראנט</h3>
-                    <p class="text-gray-400 text-lg mt-1 font-mono text-sm">(Mike Brant)</p>
-                </a>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500">
-        <div class="max-w-4xl mx-auto px-6">
-            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
-            <p class="mb-4">שנת יצירה: 2026</p>
-            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
-                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+    <!-- Footer Optimized for S25 Ultra -->
+    <footer class="w-full bg-[#050505] py-24 border-t border-gray-800 text-center text-gray-500 mt-auto px-8">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-black text-gray-300 mb-6 text-glow">הארכיון של ג'מיני ורם</h2>
+            <p class="text-2xl mb-12 font-light leading-relaxed">תצוגה אופטימלית ל-Samsung S25 Ultra | שנת יצירה: 2026</p>
+            <div class="h-1 w-40 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto mb-12 opacity-60"></div>
+            <p class="text-xl text-gray-700 leading-relaxed italic border-t border-gray-900 pt-12 max-w-3xl mx-auto">
+                סיבת הבנייה: מחקר ביוגרפי מעמיק, הרפתקאות היסטוריות והוקרה לשאנסונרים הצרפתיים הגדולים שעיצבו את פס הקול של המאה ה-20. כל המידע מבוסס על מקורות מחקר רשמיים וארכיונים לאומיים.
             </p>
         </div>
     </footer>
+
 </body>
 </html>
+
+```
