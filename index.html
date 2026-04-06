@@ -17,7 +17,7 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-sans min-h-screen selection:bg-blue-600 overflow-x-hidden">
 
-    <!-- Header / Hero Section -->
+    <!-- Header Section -->
     <header class="relative py-24 overflow-hidden border-b border-gray-800 bg-gray-900/40">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
         <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
@@ -26,23 +26,24 @@
                 מחקר היסטורי מקיף על גדולי הזמר הצרפתי - מסע בעקבות הקולות שעיצבו דורות.
             </p>
             <div class="mt-12 flex flex-wrap justify-center gap-6">
-                <div class="flex items-center gap-2 bg-blue-900/30 text-blue-400 px-8 py-3 rounded-2xl border border-blue-500/30 font-black text-xl">
-                    <span class="w-3 h-3 bg-blue-500 rounded-full animate-ping"></span>
+                <!-- כפתור אודות בולט -->
+                <a href="about.html" class="flex items-center gap-3 bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-2xl transition-all font-black text-2xl shadow-[0_10px_40px_-10px_rgba(37,99,235,0.6)] group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 group-hover:rotate-12 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    אודות הפרויקט
+                </a>
+                <div class="bg-gray-800/50 text-gray-300 px-8 py-4 rounded-2xl border border-gray-700 font-bold text-xl flex items-center">
+                    <span class="w-3 h-3 bg-green-500 rounded-full ml-3 animate-pulse"></span>
                     17 אמנים בארכיון
-                </div>
-                <div class="bg-gray-800/50 text-gray-300 px-8 py-3 rounded-2xl border border-gray-700 font-bold text-xl">
-                    הוגים ובונים: ג'מיני ורם
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Main Grid Content -->
-    <main class="max-w-[1400px] mx-auto px-6 py-20">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+    <main class="max-w-[1440px] mx-auto px-6 py-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
             
             <script>
-                // רשימת האמנים המלאה והמעודכנת בסדר כרונולוגי
                 const singers = [
                     { name: "איבט גילבר", year: "1865", file: "yvette_guilbert.html", img: "yvette_guilbert.jpg" },
                     { name: "מוריס שבלייה", year: "1888", file: "maurice_chevalier.html", img: "maurice_chevalier.jpg" },
@@ -64,20 +65,20 @@
                 ];
 
                 document.write(singers.map(s => `
-                    <a href="chansonniers/${s.file}" class="singer-card group relative bg-gray-900 rounded-[3rem] overflow-hidden border border-gray-800 shadow-2xl flex flex-col">
+                    <a href="chansonniers/${s.file}" class="singer-card group relative bg-gray-900 rounded-[3.5rem] overflow-hidden border border-gray-800 shadow-2xl flex flex-col">
                         <div class="aspect-[4/5] overflow-hidden relative">
                             <img src="images/${s.img}" alt="${s.name}" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/400x500?text=${s.name}'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent opacity-80"></div>
                         </div>
-                        <div class="p-10 flex-grow flex flex-col justify-between">
+                        <div class="p-12 flex-grow flex flex-col justify-between relative z-10">
                             <div>
-                                <div class="flex justify-between items-start mb-4">
+                                <div class="flex justify-between items-start mb-6">
                                     <h3 class="text-3xl font-black text-white group-hover:text-blue-400 transition-colors leading-tight">${s.name}</h3>
-                                    <span class="text-blue-500 font-mono font-black text-xl bg-blue-500/10 px-3 py-1 rounded-lg">${s.year}</span>
+                                    <span class="text-blue-500 font-mono font-black text-2xl bg-blue-500/10 px-4 py-1.5 rounded-xl border border-blue-500/20">${s.year}</span>
                                 </div>
-                                <p class="text-gray-400 text-xl font-light mb-6">לחץ לקריאת המחקר הביוגרפי המלא &larr;</p>
+                                <p class="text-gray-400 text-xl font-light mb-8">לחץ למחקר הביוגרפי והאטימולוגי המלא &larr;</p>
                             </div>
-                            <div class="h-1.5 w-16 bg-blue-600 rounded-full group-hover:w-full transition-all duration-700 opacity-50"></div>
+                            <div class="h-2 w-20 bg-blue-600 rounded-full group-hover:w-full transition-all duration-1000 opacity-60"></div>
                         </div>
                     </a>
                 `).join(''));
@@ -87,13 +88,21 @@
     </main>
 
     <!-- Footer Optimized for S25 Ultra -->
-    <footer class="w-full bg-[#050505] py-24 border-t border-gray-800 text-center text-gray-500 mt-auto px-8">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-4xl font-black text-gray-300 mb-6 text-glow">הארכיון של ג'מיני ורם</h2>
-            <p class="text-2xl mb-12 font-light leading-relaxed">תצוגה אופטימלית ל-Samsung S25 Ultra | שנת יצירה: 2026</p>
-            <div class="h-1 w-40 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto mb-12 opacity-60"></div>
-            <p class="text-xl text-gray-700 leading-relaxed italic border-t border-gray-900 pt-12 max-w-3xl mx-auto">
-                סיבת הבנייה: מחקר ביוגרפי מעמיק, הרפתקאות היסטוריות והוקרה לשאנסונרים הצרפתיים הגדולים שעיצבו את פס הקול של המאה ה-20. כל המידע מבוסס על מקורות מחקר רשמיים וארכיונים לאומיים.
+    <footer class="w-full bg-[#050505] py-24 border-t border-gray-800 text-center text-gray-500 mt-auto px-8 relative overflow-hidden">
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/5 blur-[120px] rounded-full"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+            <h2 class="text-5xl font-black text-gray-300 mb-8 text-glow">הארכיון של ג'מיני ורם</h2>
+            
+            <div class="flex justify-center gap-10 mb-12">
+                <a href="about.html" class="text-blue-400 hover:text-white transition-all text-2xl font-black border-b-2 border-blue-400/30 hover:border-blue-400 pb-2">אודות הפרויקט</a>
+                <a href="#top" class="text-gray-500 hover:text-white transition-all text-2xl font-bold">חזרה למעלה</a>
+            </div>
+
+            <p class="text-xl mb-12 font-light">נבנה בתיאום מושלם ל-Samsung S25 Ultra | שנת יצירה: 2026</p>
+            <div class="h-1.5 w-48 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto mb-14 opacity-60"></div>
+            
+            <p class="text-xl text-gray-700 leading-relaxed italic border-t border-gray-900 pt-14 max-w-4xl mx-auto">
+                סיבת הבנייה: מחקר ביוגרפי מעמיק והוקרה לשאנסונרים הגדולים שעיצבו את התרבות האירופאית. כל המידע והאטימולוגיה המפורטת נאספו בשיתוף פעולה בין רם לבינה המלאכותית ג'מיני.
             </p>
         </div>
     </footer>
