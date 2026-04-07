@@ -3,155 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ז'ורז' ברסנס - מחקר</title>
+    <title>איב מונטאן - מחקר ביוגרפי אולטרה-מפורט</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>tailwind.config = { darkMode: 'class', }</script>
-    <style>html { scroll-behavior: smooth; }</style>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { -webkit-tap-highlight-color: transparent; }
+        .text-glow { text-shadow: 0 0 20px rgba(59, 130, 246, 0.6); }
+        .glass-panel { backdrop-filter: blur(12px); background-color: rgba(17, 24, 39, 0.7); }
+    </style>
 </head>
-<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-500 selection:text-white relative">
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col selection:bg-blue-600 selection:text-white relative overflow-x-hidden">
     <main class="flex-grow w-full max-w-4xl mx-auto p-6 md:p-10 pt-12">
-        <a href="../index.html" class="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 transition-colors text-lg font-medium">
-            <span class="ml-2 text-2xl">&larr;</span> חזרה לאינדקס
-        </a>
+        <!-- ניווט חזרה -->
+        <nav class="mb-12">
+            <button onclick="window.location.href='../index.html'" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-all text-xl font-black group">
+                <span class="ml-3 text-3xl group-hover:-translate-x-2 transition-transform">&larr;</span> חזרה לאינדקס הראשי
+            </button>
+        </nav>
         
-        <header class="mb-14 text-center">
-            <div class="w-56 h-56 mx-auto mb-8 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl relative group cursor-pointer" onclick="openModal()">
-                <img src="../images/georges_brassens.jpg" alt="ז'ורז' ברסנס" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-full group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                    <span class="opacity-0 group-hover:opacity-100 text-white font-bold transition-opacity duration-300 drop-shadow-md">הגדל תמונה</span>
+        <!-- כותרת ראשית -->
+        <header class="mb-20 text-center relative">
+            <div class="absolute inset-0 bg-blue-600/10 blur-[100px] rounded-full z-0"></div>
+            <div class="w-64 h-64 mx-auto mb-10 rounded-[3.5rem] overflow-hidden border-4 border-gray-800 shadow-[0_35px_70px_-15px_rgba(0,0,0,0.8)] relative group cursor-pointer z-10" onclick="openModal()">
+                <img src="../images/yves_montand.jpg" alt="איב מונטאן" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" onerror="this.src='https://via.placeholder.com/500x500?text=Yves+Montand'">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <div class="p-5 rounded-full glass-panel border border-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
                 </div>
             </div>
-            <h1 class="text-5xl font-extrabold text-white mb-3">ז'ורז' ברסנס</h1>
-            <p class="text-2xl text-gray-400 font-mono">Georges Brassens</p>
-            <div class="mt-4 inline-block bg-gray-900 px-6 py-2 rounded-full border border-gray-800 text-blue-400 font-semibold text-lg">
-                שנות חיים: 1921 - 1981
+            <h1 class="text-7xl font-black text-white mb-4 tracking-tighter text-glow relative z-10">איב מונטאן</h1>
+            <p class="text-3xl text-gray-400 font-mono italic tracking-widest uppercase relative z-10">Ivo Livi</p>
+            <div class="mt-8 inline-flex items-center gap-4 bg-gray-900/80 p-1 rounded-full border border-gray-800 pr-8 relative z-10">
+                <span class="text-gray-400 font-bold tracking-widest text-lg">שנות חיים:</span>
+                <span class="bg-blue-600 px-8 py-3 rounded-full text-white font-black text-2xl shadow-xl shadow-blue-900/30">1921 - 1991</span>
             </div>
         </header>
 
-        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
-            <h2 class="text-3xl font-bold text-white mb-8 flex items-center border-b border-gray-800 pb-4">
-                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
-                אטימולוגיה ומקור השם המלא
+        <!-- מחקר אטימולוגי מורחב ומפוצל -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50 relative">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5 shadow-[0_0_20px_rgba(59,130,246,0.6)]"></span>
+                ניתוח אטימולוגי של השם המקורי והבמתי
             </h2>
-            <div class="space-y-6">
-                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
-                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם פרטי: ז'ורז' (Georges)</h3>
-                    <p class="text-xl text-gray-300 leading-relaxed">מקור יווני (<span class="text-white font-mono">Georgios</span>). מורכב מהמילים "ge" (אדמה) ו-"ergon" (עבודה). המשמעות היא "עובד אדמה" או "איכר". שם המשתלב היטב עם דימויו של ברסנס כאדם פשוט ואותנטי המחובר לאדמה, לטבע ולעם.</p>
+            <div class="grid gap-10">
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-blue-500/30 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-blue-900/30 group-hover:text-blue-600/20 transition-colors">01</span>
+                        <h3 class="text-3xl font-black text-blue-400 mr-5">איבו (Ivo)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        שמו המקורי שניתן לו בלידתו באיטליה. השם איבו הוא ממקור גרמאני עתיק (Iv) שמשמעותו "עץ הטקסוס" (Yew tree). מדובר בעץ חזק ששימש היסטורית ליצירת קשתות ללחימה. השם מסמל עמידות, כוח וחוסן – תכונות שנדרשו למשפחתו כאשר נאלצו להימלט ממשטרו של מוסוליני.
+                    </p>
                 </div>
-                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
-                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם אמצעי ראשון: שארל (Charles)</h3>
-                    <p class="text-xl text-gray-300 leading-relaxed">מקור גרמאני עתיק (<span class="text-white font-mono">Karl</span>). משמעותו המילולית היא "אדם חופשי" או "גבר חופשי" – ביטוי שהולם בצורה יוצאת דופן את תפיסת עולמו האנרכיסטית בהמשך חייו.</p>
+
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-blue-500/30 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-blue-900/30 group-hover:text-blue-600/20 transition-colors">02</span>
+                        <h3 class="text-3xl font-black text-blue-400 mr-5">ליווי (Livi)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        שם משפחה איטלקי נפוץ בטוסקנה, שכנראה נגזר מהשם הרומי העתיק "ליביוס" (Livius). משפחת ליווי הייתה משפחת פועלים קשת יום מאיטליה, עובדה שעיצבה את תפיסת עולמו הסוציאליסטית של איב בבגרותו.
+                    </p>
                 </div>
-                <div class="bg-gray-950/50 p-6 rounded-2xl border border-gray-800/50">
-                    <h3 class="text-2xl font-bold text-blue-400 mb-2">שם משפחה: ברסנס (Brassens)</h3>
-                    <p class="text-xl text-gray-300 leading-relaxed">שם משפחה המגיע מאזור אוקסיטניה (דרום צרפת), כנראה מבוסס על השורש המקומי "brasa" (גחלת/אש) או נגזר משם של ישוב חקלאי קדום. בניגוד לזמרים אחרים ששינו את שמם לשם במה נוצץ, ברסנס שמר על שמו המקורי לאורך כל הקריירה, כהצהרה של נאמנות לשורשיו העממיים.</p>
+
+                <div class="bg-gray-950/80 p-8 rounded-[2.5rem] border border-gray-800 hover:border-blue-500/30 transition-all duration-500 group">
+                    <div class="flex items-center mb-6">
+                        <span class="text-5xl font-black text-blue-900/30 group-hover:text-blue-600/20 transition-colors">03</span>
+                        <h3 class="text-3xl font-black text-blue-400 mr-5">איב מונטאן (Yves Montand)</h3>
+                    </div>
+                    <p class="text-2xl text-gray-300 leading-relaxed font-light">
+                        <strong>איב (Yves):</strong> צרפות (Francization) ישיר של השם איבו, כדי להיטמע בתרבות הצרפתית במרסיי.<br><br>
+                        <strong>מונטאן (Montand):</strong> כילד בשכונות העוני של מרסיי, אמו (שלא דיברה צרפתית רהוטה) הייתה קוראת לו מהחלון לשוב הביתה מהרחוב בשילוב של איטלקית וצרפתית משובשת: <strong>"Ivo, monta!"</strong> (איבו, תעלה!). הזיכרון של קריאתה החמה מן החלון הפך לשם הבמה שלו וליווה אותו לכל חייו.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
-            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
-                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
-                ילדות, שערוריות והימלטות מהנאצים
+        <!-- פרטי ילדות מורחבים מאוד -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-10 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5 shadow-[0_0_20px_rgba(59,130,246,0.6)]"></span>
+                ילדות: מאיטליה הפשיסטית למרסיי (מורחב)
             </h2>
-            <div class="space-y-5 text-xl leading-relaxed text-gray-300">
-                <p>
-                    <strong class="text-blue-300">ניגודים בבית:</strong> נולד בעיר החוף סֵט (Sète) שבדרום צרפת. הוא גדל בבית של ניגודים: אביו, ז'אן-לואי, היה קבלן בניין, אתאיסט מוחלט ובעל אופי נוח; אמו, אלווירה (ממוצא איטלקי), הייתה קתולית אדוקה ושמרנית מאוד. הדבר היחיד שאיחד את הבית היה האהבה למוזיקה, ושירים הושמעו שם דרך קבע.
-                </p>
-                <p>
-                    <strong class="text-blue-300">הסתבכות בגניבות:</strong> בנעוריו היה ברסנס תלמיד גרוע שסלד ממסגרות נוקשות. ב-1939 (גיל 18), בניסיון להשיג כסף לקניית מערכת תופים, הוא וחבריו הסתבכו בפרשת גניבות תכשיטים של בנות משפחתם. המשטרה התערבה, והשערורייה בעיירה הקטנה הייתה עצומה. ברסנס סולק מבית הספר וקיבל עונש מאסר על תנאי. אירוע משפיל זה הפך אותו למנודה זמנית, אך גם עיצב לעד את השקפת עולמו המורדת ובוז למשטרה ול"אנשים הטובים". לאחר מכן עזב את ביתו ונסע לפריז.
-                </p>
-                <p>
-                    <strong class="text-blue-300">עבודות כפייה ומחתרת:</strong> במהלך מלחמת העולם השנייה (1943), שלטונות הכיבוש הנאצי שלחו אותו למחנה עבודת כפייה (STO) בעיירה בזדורף בגרמניה. בחופשתו הראשונה לפריז, הוא החליט לערוק. הוא ירד למחתרת והסתתר בדירת עוני זעירה ללא חשמל ומים זורמים (ב"אימפאס פלורימון") אצל ז'אן לה בוניאק – אישה קשת יום שהעניקה לו מחסה ומזון תוך סיכון חייה. לימים, ינציח אותה ואת בעלה מרסל בשיר התודה המפורסם שלו "שיר למען איש אוברן" (Chanson pour l'Auvergnat). בדירה זו, בבדידות ובפחד, החל לכתוב את יצירות המופת הראשונות שלו.
-                </p>
-            </div>
-        </section>
+            <div class="space-y-10 text-2xl leading-relaxed text-gray-300 font-light">
+                <div class="bg-gray-950/50 p-8 rounded-3xl border border-gray-800/80">
+                    <strong class="text-blue-400 font-black block mb-4">1. הבריחה מהחולצות השחורות:</strong>
+                    <p>
+                        איבו ליווי נולד במונסומאנו טרמה, כפר קטן בטוסקנה. אביו ג'ובאני היה יצרן מטאטאים ופעיל קומוניסטי מיליטנטי. ב-1923, כשהפשיזם של מוסוליני החל להתבסס באיטליה, אביו הותקף פיזית באכזריות על ידי בריוני "החולצות השחורות" (Fasci). בלית ברירה, המשפחה נמלטה באישון לילה כדי לחצות את הגבול. מטרתם המקורית הייתה להגר לארצות הברית ולהגשים את "החלום האמריקאי", אך בגלל מגבלות ויזה נוקשות באותה תקופה, הם "נתקעו" בעיר הנמל מרסיי בדרום צרפת, בשכונת העוני העלובה <span class="italic text-white">La Cabucelle</span>.
+                    </p>
+                </div>
 
-        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
-            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
-                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
-                אידאולוגיה והישגים
-            </h2>
-            <div class="text-xl text-gray-300 leading-relaxed space-y-4">
-                <p><strong>אידאולוגיה (אנרכיזם אינדיבידואליסטי):</strong> ברסנס נחשב ל"טרובדור המודרני". האידאולוגיה שלו דגלה בחופש אישי מוחלט, אנטי-מיליטריזם (התנגדות לצבא), בוז עמוק לצביעות הבורגנית, לממסד הדתי, למערכת המשפט ולכל סמכות כופה. שיריו היו לרוב סאטיריים, ולעיתים אף השתמשו במילים שערורייתיות ובוטות שעוררו זעם בקרב השמרנים, אך הם תמיד היו עטופים בהומור דק ובחמלה עצומה כלפי האנשים הפשוטים, הזונות, והנוודים בשולי החברה.</p>
-                <p><strong>סגנון ייחודי ומינימליסטי:</strong> בניגוד להפקות הראוותניות והתזמורות הגדולות של עמיתיו, ברסנס הופיע תמיד במינימליזם קיצוני: מלווה את עצמו בגיטרה אקוסטית בלבד (ומאוחר יותר עם חברו, נגן הקונטרבס פייר ניקולא), ישוב על שרפרף, כשהוא מזיע ושר בביישנות. הטקסט המשובח תפס את מרכז הבמה. לחניו, שנראו פשוטים למשמע אוזן, היו למעשה מורכבים מאוד ומושפעים מג'אז אמריקאי ישן.</p>
-                <p><strong>הישג ספרותי נדיר:</strong> למרות התדמית המרדנית, הוא היה חוקר לשון צרפתית ואשף של חרוזים. שיריו נכתבו בשפה צרפתית גבוהה ומדויקת להפליא, משלבים סלנג ופיוט יחד. ההוכחה הגדולה ביותר לגדולתו הייתה ב-1967, כאשר זכה ב"פרס השירה הגדול" (Grand Prix de Poésie) מטעם האקדמיה הצרפתית היוקרתית – הישג ששבר את המחיצות והוכיח ששאנסון יכול להיחשב לספרות גבוהה.</p>
-            </div>
-        </section>
+                <div class="bg-gray-950/50 p-8 rounded-3xl border border-gray-800/80">
+                    <strong class="text-blue-400 font-black block mb-4">2. עוני קיצוני ועבודת פרך:</strong>
+                    <p>
+                        חייהם במרסיי היו רצופים בקשיי הישרדות. אביו הקים בית מלאכה קטן למטאטאים, אך המשבר הכלכלי העולמי (השפל הגדול) של 1929 גרם לו לפשוט רגל. איבו נאלץ לעזוב את בית הספר בגיל 11 בלבד כדי לעזור בפרנסת המשפחה. הוא החל את דרכו בעבודות כפיים שחורות: תחילה כפועל בבית חרושת לפסטה בתנאי חום ולחות קשים, ולאחר מכן כעוזר במספרה של אחותו לידיה, שם עבד בחפיפת שיער. החיים ברחובות מרסיי הקשוחים העניקו לו מבטא דרומי כבד וחיספסו את אישיותו.
+                    </p>
+                </div>
 
-        <section class="mb-12 bg-gray-900/50 p-8 rounded-3xl shadow-lg border border-gray-800">
-            <h2 class="text-3xl font-bold text-white mb-6 flex items-center border-b border-gray-800 pb-4">
-                <span class="w-2 h-8 bg-blue-500 rounded-full ml-3"></span>
-                השירים הגדולים
-            </h2>
-            <div class="space-y-4">
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
-                    <a href="https://www.youtube.com/results?search_query=Georges+Brassens+-+Chanson+pour+l%27Auvergnat" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        Chanson pour l'Auvergnat
-                    </a>
-                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">שיר למען איש אוברן (שיר תודה מרגש על הכנסת אורחים)</span>
-                </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
-                    <a href="https://www.youtube.com/results?search_query=Georges+Brassens+-+Le+Gorille" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        Le Gorille
-                    </a>
-                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">הגורילה (שיר סאטירי שצונזר עקב ביקורת נגד עונש המוות)</span>
-                </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
-                    <a href="https://www.youtube.com/results?search_query=Georges+Brassens+-+Les+Copains+d%27abord" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        Les Copains d'abord
-                    </a>
-                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">החברים לפני הכל (המנון חברות נאמנה)</span>
-                </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
-                    <a href="https://www.youtube.com/results?search_query=Georges+Brassens+-+La+Mauvaise+R%C3%A9putation" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        La Mauvaise Réputation
-                    </a>
-                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">המוניטין הרע (שיר על נונקונפורמיזם)</span>
-                </div>
-                <div class="group flex flex-col md:flex-row md:justify-between md:items-center bg-gray-950 p-5 rounded-2xl border border-gray-800 hover:border-red-500/50 transition-colors">
-                    <a href="https://www.youtube.com/results?search_query=Georges+Brassens+-+Les+Amoureux+des+bancs+publics" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 font-bold text-white text-2xl group-hover:text-red-400 transition-colors hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                        Les Amoureux des bancs publics
-                    </a>
-                    <span class="italic text-gray-400 text-xl mt-3 md:mt-0 text-right md:text-left">האוהבים על ספסלים ציבוריים</span>
+                <div class="bg-gray-950/50 p-8 rounded-3xl border border-gray-800/80">
+                    <strong class="text-blue-400 font-black block mb-4">3. גילוי הבמה והקולנוע האמריקאי:</strong>
+                    <p>
+                        המפלט היחיד של איבו מהחיים האפורים היה בית הקולנוע השכונתי. שם הוא נחשף למחזות הזמר האמריקאיים והתאהב בדמויות כמו פרד אסטר, ג'ין קלי ומיקי רוני. הוא בילה שעות מול המראה בניסיון לחקות את צעדי סטפס ואת המניירות ההוליוודיות. בגיל 17 (1938), הוא אזר אומץ והחל להופיע במועדונים שכונתיים במרסיי תחת שם הבמה "איב מונטאן", כשהוא משמש כ"שואו-מן" מקומי המשלב שירה, ריקוד וחיקויים של כוכבי התקופה. הופעותיו נקטעו עם פרוץ מלחמת העולם השנייה, כאשר נאלץ לעבוד במספנות הצי הצרפתי (Chantiers de Provence) כדי להימנע מגירוש למחנות העבודה בגרמניה.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- סעיף מקורות מחקר -->
-        <section class="mb-4 bg-gray-900/50 p-6 rounded-2xl border border-gray-800">
-            <h3 class="text-xl font-bold text-gray-300 mb-3 flex items-center">
-                <span class="text-blue-500 mr-2 text-2xl">&bull;</span> מקורות מחקר:
+        <!-- אידאולוגיה והישגים מורחבים מאוד -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-10 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5 shadow-[0_0_20px_rgba(59,130,246,0.6)]"></span>
+                אידאולוגיה אמנותית והישגים בינלאומיים (מורחב)
+            </h2>
+            <div class="space-y-10 text-2xl text-gray-300 font-light">
+                
+                <div class="bg-blue-900/10 p-8 rounded-3xl border-r-8 border-blue-600 shadow-inner">
+                    <h3 class="text-3xl font-black text-white mb-4">הפגישה המכוננת עם אדית פיאף (1944)</h3>
+                    <p class="leading-relaxed">
+                        נקודת המפנה הגדולה בחייו התרחשה בסוף מלחמת העולם השנייה. מונטאן הגיע לפריז והוזמן להופיע במועדון ה"מולן רוז'" כמופע חימום של הדיווה הגדולה מכולן – אדית פיאף. פיאף, שהייתה ידועה בחושיה החדים, זיהתה מיד את כישרונו הגולמי של הצעיר האיטלקי-צרפתי, אך גם את חוסר הליטוש שלו. היא לקחה אותו תחת חסותה (והם הפכו לזוג). היא אילצה אותו לנטוש את המבטא הדרומי המוגזם שלו, הכריחה אותו לקרוא שירה קלאסית כדי להעשיר את שפתו, ולימדה אותו כיצד להגיש שיר מתוך כאב פנימי אמיתי ולא רק כ"בידור". היא הפכה אותו מזמר מועדונים פשוט ל<strong>שאנסונייר אמיתי</strong>. היא זו שהעניקה לו את השיר המפורסם "עלי שלכת" (Les Feuilles mortes) שהפך לכרטיס הביקור העולמי שלו.
+                    </p>
+                </div>
+
+                <div class="bg-gray-950/60 p-8 rounded-3xl border border-gray-800">
+                    <h3 class="text-3xl font-black text-white mb-4">מעורבות פוליטית: מהשמאל הרדיקלי להתפכחות</h3>
+                    <p class="leading-relaxed">
+                        בניגוד לזמרים צרפתים אחרים שניסו לשמור על "ניטרליות", איב מונטאן היה אדם פוליטי בכל רמ"ח איבריו. לאורך עשרות שנים הוא ואשתו, השחקנית זוכת האוסקר סימון סיניורה, היו מהדמויות הבולטות ביותר של השמאל האינטלקטואלי בצרפת. הוא הזדהה עמוקות עם מעמד הפועלים והמפלגה הקומוניסטית, חתם על עצומת שטוקהולם נגד נשק גרעיני, וסירב בתחילה להופיע בארה"ב בגלל המקארתיזם.
+                        <br><br>
+                        עם זאת, האידאולוגיה שלו חוותה שבר עמוק. לאחר הפלישה הסובייטית לפראג (1968) וגילוי זוועות הסטליניזם, מונטאן חווה התפכחות כואבת. הוא ביטא את השבר הזה בקולנוע, כשכיכב בסרט המופת הפוליטי של קוסטה-גווראס, <strong>"ההודאה" (L'Aveu, 1970)</strong>, בו גילם פקיד שלטון צ'כי שעובר עינויים ומשפטי ראווה קומוניסטיים. סרט זה, יחד עם "Z", הפך אותו לסמל של מאבק בדיכוי מכל צד פוליטי.
+                    </p>
+                </div>
+
+                <div class="bg-gray-950/60 p-8 rounded-3xl border border-gray-800">
+                    <h3 class="text-3xl font-black text-white mb-4">השואו-מן הבינלאומי והכיבוש של הוליווד</h3>
+                    <p class="leading-relaxed">
+                        איב מונטאן היה האמן הצרפתי השלם ביותר: שחקן קולנוע מבריק וזמר כריזמטי. הישגיו הקולנועיים היו פנומנליים: החל מסרט המתח המופתי <strong>"שכר האימה" (Le Salaire de la peur, 1953)</strong> שזכה בפסטיבל קאן, ועד לתפקידיו המרגשים בסוף חייו בסרטים "ז'אן דה פלורט" ו"מאנון".
+                        <br><br>
+                        ההישג הבינלאומי הגדול ביותר שלו היה כיבוש ארצות הברית – הישג נדיר לאמן ששר בצרפתית. ב-1959 הוא העלה מופע יחיד בברודוויי, ניו יורק, שהוגדר כ"סנסציה". ההצלחה בברודוויי פתחה לו את הדלתות להוליווד, שם כיכב בסרט <strong>"בוא נעשה אהבה" (Let's Make Love, 1960)</strong> לצדה של <strong>מרילין מונרו</strong>. הרומן שניהל עם מונרו במהלך הצילומים הפך לאחת מפרשיות הרכילות המפורסמות בהיסטוריה של הוליווד, והעצים את ההילה שלו כגבר צרפתי רומנטי בלתי ניתן לעצירה.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- רשימת שירים (מותאמת S25 Ultra) -->
+        <section class="mb-16 bg-gray-900/30 p-10 rounded-[3rem] shadow-2xl border border-gray-800/50">
+            <h2 class="text-4xl font-black text-white mb-12 flex items-center border-b border-gray-800 pb-8">
+                <span class="w-4 h-12 bg-blue-500 rounded-2xl ml-5"></span>
+                חמשת היצירות הגדולות (יוטיוב)
+            </h2>
+            <div class="grid gap-6">
+                <!-- השיר הגדול ביותר בעולם של שאנסון -->
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Yves+Montand+-+Les+Feuilles+mortes', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-blue-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-blue-600/10 p-4 rounded-2xl group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-10 h-10 text-blue-500 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Les Feuilles mortes</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">עלי שלכת (הקלאסיקה הנצחית של השאנסון)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Yves+Montand+-+Sous+le+ciel+de+Paris', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-blue-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-blue-600/10 p-4 rounded-2xl group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-10 h-10 text-blue-500 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">Sous le ciel de Paris</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">תחת שמי פריז (המנון העיר הבלתי מעורער)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Yves+Montand+-+C%27est+si+bon', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-blue-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-blue-600/10 p-4 rounded-2xl group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-10 h-10 text-blue-500 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">C'est si bon</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">כה טוב (קצב ג'אזי שזכה לגרסאות עולמיות)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Yves+Montand+-+La+Bicyclette', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-blue-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-blue-600/10 p-4 rounded-2xl group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-10 h-10 text-blue-500 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">La Bicyclette</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">האופניים (שיר נוסטלגי על נעורים ואהבה)</span>
+                </button>
+
+                <button onclick="window.open('https://www.youtube.com/results?search_query=Yves+Montand+-+A+Paris', '_blank')" class="w-full text-right bg-gray-950 p-8 rounded-[2rem] border border-gray-800 hover:border-blue-500 transition-all group flex flex-col md:flex-row justify-between items-start md:items-center">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-blue-600/10 p-4 rounded-2xl group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-10 h-10 text-blue-500 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        </div>
+                        <span class="text-3xl font-black text-white">À Paris</span>
+                    </div>
+                    <span class="text-gray-400 text-2xl italic mt-3 md:mt-0 font-light">בפריז (שיר הלל לבירה הצרפתית)</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- מקורות מחקר -->
+        <section class="mb-12 bg-gray-900/50 p-10 rounded-[3rem] border border-gray-800">
+            <h3 class="text-3xl font-black text-gray-300 mb-8 flex items-center">
+                <span class="text-blue-500 mr-2 text-3xl">&bull;</span> מקורות למחקר המעמיק:
             </h3>
-            <ul class="list-disc list-inside text-gray-400 space-y-1 text-lg">
-                <li><span class="font-mono text-gray-300">Brassens: le libertaire de la chanson</span> - מחקר ביוגרפי מאת מארק רובה (Marc Robine), העוסק בילדותו ובהסתבכותו עם החוק.</li>
-                <li><span class="font-mono text-gray-300">Georges Brassens: Oeuvres complètes</span> - אוסף כתביו המלאים המעיד על רמתו הספרותית.</li>
-                <li>ארכיוני האקדמיה הצרפתית - תיעוד הענקת "פרס השירה הגדול" לברסנס בשנת 1967.</li>
+            <ul class="list-disc list-inside text-gray-400 space-y-4 text-2xl font-light">
+                <li><span class="font-mono text-gray-200 font-bold">Du soleil plein la tête (1955)</span> - האוטוביוגרפיה הרשמית של איב מונטאן המגוללת את סיפור הימלטות משפחתו מאיטליה הפשיסטית ב-1923.</li>
+                <li><span class="font-mono text-gray-200 font-bold">Montand, la vie continue</span> - מחקר ביוגרפי מקיף מאת ז'ורז' סמלרון המתעד את הרומן עם אדית פיאף והפריצה בברודוויי.</li>
+                <li>ארכיוני ה-INA הצרפתי - לתיעוד משדרי הטלוויזיה, העמדות הפוליטיות, והופעותיו המשותפות עם סימון סיניורה.</li>
+                <li>ארכיון פסטיבל קאן - תיעוד הצלחותיו הקולנועיות, החל מ"שכר האימה" (1953) ועד לסרטיו של קוסטה-גווראס.</li>
             </ul>
         </section>
     </main>
 
-    <footer class="w-full bg-[#0a0a0a] py-10 border-t border-gray-800 text-center text-gray-500 mt-auto">
+    <!-- פוטר (S25 Ultra Optimized) -->
+    <footer class="w-full bg-[#050505] py-20 border-t border-gray-800 text-center text-gray-500 mt-auto">
         <div class="max-w-4xl mx-auto px-6">
-            <p class="text-lg font-medium text-gray-400 mb-2">האתר נבנה על ידי ג'מיני ורם</p>
-            <p class="mb-4">שנת יצירה: 2026</p>
-            <p class="text-sm border-t border-gray-800 pt-4 mt-4">
-                סיבת הבנייה: מחקר מקיף והוקרה לשאנסונרים הצרפתיים הגדולים
+            <p class="text-3xl font-black text-gray-400 mb-4 text-glow">נבנה ומחקר ע"י ג'מיני ורם (2026)</p>
+            <p class="text-2xl mb-10">תצוגה אופטימלית ל-Samsung S25 Ultra</p>
+            <div class="h-1.5 w-48 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto mb-10 rounded-full opacity-60"></div>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed italic border-t border-gray-900 pt-10">
+                סיבת הבנייה: מחקר ביוגרפי, הרפתקאות היסטוריות והוקרה לשאנסונרים הצרפתיים הגדולים. הקובץ המורחב נוצר במיוחד על מנת לצלול אל עומק ההקשר הפוליטי והקולנועי שעיצב את דמותו של ה"שואו-מן" האולטימטיבי.
             </p>
         </div>
     </footer>
 
-    <!-- מודאל התמונה הצפה -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-sm flex-col items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeModal()">
-        <div class="relative w-11/12 max-w-3xl flex flex-col items-center" onclick="event.stopPropagation()">
-            <button onclick="closeModal()" class="absolute -top-12 right-0 text-gray-400 hover:text-white text-4xl font-bold transition-colors">&times;</button>
-            <img src="../images/georges_brassens.jpg" alt="ז'ורז' ברסנס" class="w-full h-auto max-h-[80vh] object-contain rounded-xl shadow-2xl border border-gray-800">
-            <p class="text-gray-400 text-xl mt-4 font-mono">Georges Brassens</p>
+    <!-- מודאל תמונה -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/98 backdrop-blur-2xl flex-col items-center justify-center opacity-0 transition-all duration-700" onclick="closeModal()">
+        <div class="relative w-11/12 max-w-5xl flex flex-col items-center" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute -top-24 right-0 text-white hover:text-blue-400 text-7xl font-light transition-colors p-6 focus:outline-none">&times;</button>
+            <img src="../images/yves_montand.jpg" alt="איב מונטאן" class="w-full h-auto max-h-[85vh] object-contain rounded-[3rem] shadow-[0_0_120px_rgba(59,130,246,0.5)] border border-gray-800">
+            <div class="mt-10 text-center">
+                <p class="text-white text-5xl font-black tracking-tight text-glow">Yves Montand</p>
+                <p class="text-gray-400 text-2xl font-mono mt-3 tracking-widest uppercase">The Ultimate Showman</p>
+            </div>
         </div>
     </div>
 
@@ -159,16 +248,22 @@
         const modal = document.getElementById('imageModal');
         function openModal() {
             modal.classList.remove('hidden');
-            setTimeout(() => { modal.classList.remove('opacity-0'); modal.classList.add('flex'); }, 10);
+            setTimeout(() => { 
+                modal.classList.remove('opacity-0'); 
+                modal.classList.add('flex'); 
+            }, 10);
             document.body.style.overflow = 'hidden';
         }
         function closeModal() {
             modal.classList.add('opacity-0');
-            setTimeout(() => { modal.classList.add('hidden'); modal.classList.remove('flex'); }, 300);
+            setTimeout(() => { 
+                modal.classList.add('hidden'); 
+                modal.classList.remove('flex'); 
+            }, 600);
             document.body.style.overflow = '';
         }
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape" && !modal.classList.contains('hidden')) { closeModal(); }
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape" && !modal.classList.contains('hidden')) closeModal();
         });
     </script>
 </body>
